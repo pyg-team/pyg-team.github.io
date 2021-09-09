@@ -17,7 +17,7 @@
       </div>
       <!-- /column -->
       <div class="space30 d-lg-none d-xl-none"></div>
-      <div class="col-6 col-md-3 col-lg-2 offset-lg-1">
+      <div class="col-1 col-md-1 col-lg-1 offset-lg-1">
         {% assign extrnal_link_02 = site.data.general_settings.external_links_02 %}
         <div class="widget">
           {% if extrnal_link_02.title %}
@@ -32,7 +32,7 @@
         <!-- /.widget -->
       </div>
       <!-- /column -->
-      <div class="col-6 col-md-3 col-lg-2">
+      <div class="6 col-md-3 col-lg-2">
         {% assign external_links = site.data.general_settings.external_links %}
         <div class="widget">
           {% if external_links.title %}
@@ -47,7 +47,7 @@
         <!-- /.widget -->
       </div>
       <!-- /column -->
-      <div class="col-6 col-md-3 col-lg-2">
+      <div class="col-1 col-md-1 col-lg-1">
         {% assign external_links_03 = site.data.general_settings.external_links_03 %}
         <div class="widget">
           {% if external_links_03.title %}
@@ -62,13 +62,14 @@
         <!-- /.widget -->
       </div>
       <!-- /column -->
-      <div class="col-6 col-md-3 col-lg-2">
+      <div class="col-12 col-md-6 col-lg-4">
         <div class="widget">
           <h5 class="widget-title">Contact</h5>
           {% if site.data.general_settings.address_01 %}
           <address>{{site.data.general_settings.address_01}}</address>
           {% endif %}
           <a href="mailto:{{site.data.general_settings.email}}">{{site.data.general_settings.email}}</a><br />
+          <a href="mailto:{{site.data.general_settings.email_2}}">{{site.data.general_settings.email_2}}</a><br />
            {{site.data.general_setting.phone_number}}
         </div>
         <!-- /.widget -->

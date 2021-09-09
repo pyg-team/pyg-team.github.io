@@ -2,10 +2,10 @@
 layout: default
 slider_area:
   enable: true
-  title: "Grow Your Business with Our Marketing Solutions"
-  sub_title: "We help our clients to increase their website traffic, rankings and visibility in search results."
-  button_text: "Try It For Free"
-  button_url: "#"
+  title: "PyG is the go-to library for Graph Neural Networks"
+  sub_title: "We hope to support everything that you will need to build a graph machine learning pipeline"
+  button_text: "Try it out"
+  button_url: "https://pytorch-geometric.readthedocs.io/en/latest/"
   slider_images:
     img_01: "/assets/images/art/rocket1.png"
     img_02: "/assets/images/art/rocket2.png"
@@ -13,13 +13,14 @@ slider_area:
     img_04: "/assets/images/art/rocket4.png"
 
 features_area:
-  enable: true
+  enable: false
   title: "What We Do?"
   sub_title: "The full service we are offering is specifically designed to meet your business needs."
   features:
     - title: "SEO Services"
       icon: "jam jam-search"
       icon_color: "blue"
+      icon_url: "https://github.com/rusty1s/pytorch_geometric"
       description: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo."
 
     - title: "Web Design"
@@ -38,7 +39,7 @@ features_area:
       description: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo."
 
 two_columns_one:
-  enable: true
+  enable: false
   title: "Why Choose Us?"
   sub_title: "Why is Search Engine Optimization important for your business?"
   image: "/assets/images/concept/concept8@2x.png"
@@ -51,7 +52,7 @@ two_columns_one:
     - "Fusce dapibus cursus commodo."
 
 process_area:
-  enable: true
+  enable: false
   title: "Our Process"
   sub_title: "We bring solutions to make life easier for our customers"
   image: "/assets/images/concept/concept1@2x.png"
@@ -73,7 +74,7 @@ process_area:
       icon_color: "yellow"
 
 two_columns_two:
-  enable: true
+  enable: false
   title: "Our Personalized Solutions"
   sub_title: "Just sit and relax while we take care of your business needs"
   image: "/assets/images/concept/concept3@2x.png"
@@ -87,7 +88,7 @@ two_columns_two:
     - "Fusce dapibus cursus commodo."
 
 pricing_table:
-  enable: true
+  enable: false
   title: "Our Pricing"
   sub_title: "We offer great prices, premium products and quality service for your business."
   btn_url: "#"
@@ -119,7 +120,7 @@ pricing_table:
         - "7/24 <strong>Support</strong>"
 
 about_us:
-  enable: true
+  enable: false
   title: "Let's Talk"
   sub_title: "Let's make something great together. If you got any questions, don't hesitate to get in touch with us."
   image: "/assets/images/concept/concept12@2x.png"
@@ -130,43 +131,43 @@ about_us:
 
 
 testimonials:
-  enable: true
+  enable: false
   title: "Customer Stories"
   sub_title: "Customer satisfaction is our major goal. See what our customers are saying about us."
   feedback:
 
     - quote: |
         Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat.
-      image: "/assets/images/art/t5.jpg" 
+      image: "/assets/images/art/t5.jpg"
       name: "Cornelia Gibson"
       designation: "Financial Analyst"
-  
+
     - quote: |
         Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus.
-      image: "/assets/images/art/t2.jpg" 
+      image: "/assets/images/art/t2.jpg"
       name: "Coriss Ambady"
       designation: "Marketing Specialist"
-  
+
     - quote: |
         Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget.
-      image: "/assets/images/art/t3.jpg" 
+      image: "/assets/images/art/t3.jpg"
       name: "Barclay Widerski"
       designation: "Sales Manager"
-  
+
     - quote: |
         Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget.
-      image: "/assets/images/art/t6.jpg" 
+      image: "/assets/images/art/t6.jpg"
       name: "Barclay Widerski"
       designation: "Sales Manager"
-  
+
     - quote: |
         Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget.
-      image: "/assets/images/art/t5.jpg" 
+      image: "/assets/images/art/t5.jpg"
       name: "Jackie Sanders"
       designation: "Sales Specialist"
 
 subscribe_area:
-  enable: true
+  enable: false
   title: "Analyze Now"
   sub_title: "Wonder how much faster your website can go? Easily check your SEO Score now."
   action_email: "tortoizthemes@gmail.com"
@@ -342,7 +343,7 @@ subscribe_area:
     <div class="row text-center gutter-60">
       {% for features in page.features_area.features %}
       <div class="col-md-6 col-lg-3">
-        <div class="icon icon-blob icon-blob-{{features.icon_color}} color-{{features.icon_color}} mb-20"> 
+        <div class="icon icon-blob icon-blob-{{features.icon_color}} color-{{features.icon_color}} mb-20">
         	<i class="{{features.icon}}"></i> 
         </div>
         {% if features.title %}
