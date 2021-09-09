@@ -1,6 +1,6 @@
 ---
 title: PyG
-email: team.fey@pyg.org
+email: team@pyg.org
 description: PyG is the go-to library for Graph Neural Networks. We hope to support everything that you will need to build a graph machine learning pipeline.
 black_logo_1x: "/assets/images/logo_pyg.png"
 black_logo_2x: "/assets/images/logo_pyg@2x.png"
