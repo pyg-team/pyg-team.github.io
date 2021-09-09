@@ -1,8 +1,6 @@
-# KumoML_web
- Website for KumoML.org
-## Deploy the website
+# PyG Website
 
-Follow https://jekyllrb.com/docs/ to set up the jekyll environment. Concretely:
+Follow https://jekyllrb.com/docs/ to set up the jekyll environment:
 
 ```bash
 # Install Ruby version 2.5.0 and RubyGems, then
