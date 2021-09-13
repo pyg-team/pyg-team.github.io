@@ -4,7 +4,7 @@ main_menu:
 #    url: "/"
 #    menu_type: "dropdown"
 
-  - text: "News"
+  - text: News
     url: "/news/index"
     menu_type: "none"
 
@@ -18,6 +18,10 @@ main_menu:
 
   - text: GitHub
     url: "https://github.com/pyg-team/pytorch_geometric"
+    menu_type: "none"
+
+  - text: "Join Slack"
+    url: "https://join.slack.com/t/torchgeometricco/shared_invite/zt-p6br3yuo-BxRoe36OHHLF6jYU8xHtBA"
     menu_type: "none"
 
 #  - text: "Features"
