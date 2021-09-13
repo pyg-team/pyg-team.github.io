@@ -1264,7 +1264,10 @@ img.tp-slider-alternative-image	{
 .tparrows.tp-leftarrow:before	{	content: '\e824'; }
 .tparrows.tp-rightarrow:before	{	content: '\e825'; }
 
-
+/* .tp-parallax-wrap { */
+/*   left: 640px !important; */
+/*   top: 160px !important; */
+/* } */
 
 /***************************
 	- KEN BURNS FIXES -

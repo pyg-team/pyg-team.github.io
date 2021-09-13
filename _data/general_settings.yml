@@ -29,6 +29,8 @@ google_analytics:
 external_links:
   title: Links
   links:
+  - url: "/news/index"
+    text: News
   - url: "https://pytorch-geometric.readthedocs.io/en/latest/"
     text: Docs
   - url: "https://github.com/pyg-team/pytorch_geometric/discussions"
