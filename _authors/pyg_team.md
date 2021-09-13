@@ -1,6 +1,6 @@
 ---
 layout: author_page
-title: "Tortoiz Theme"
+title: "PyG Team"
 sub_title: "About the Author"
 image: "/assets/images/art/about.jpg"
 primary_author: true

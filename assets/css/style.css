@@ -2211,10 +2211,17 @@ ol {
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     height: auto;
-    width: 4.5rem;
+    width: 6rem;
     max-width: 100%;
     -webkit-mask-size: auto auto;
     -webkit-mask-box-image-repeat: space;
+}
+.img-blob.blob1_large img {
+    -webkit-mask-box-image: url(../images/blob/blob1.svg);
+    -webkit-mask-image: url(../images/blob/blob1.svg);
+            mask-image: url(../images/blob/blob1.svg);
+    -webkit-mask-box-image-repeat: space;
+    width: 9rem;
 }
 .img-blob.blob1 img {
     -webkit-mask-box-image: url(../images/blob/blob1.svg);
@@ -7082,8 +7089,8 @@ footer.inverse-text address {
 
 .blog-posts .post-thumb {
    max-height: 245px;
-   -o-object-fit: cover;
-      object-fit: cover;
+   -o-object-fit: contain;
+      object-fit: contain;
 }
 
 
@@ -7093,8 +7100,8 @@ footer.inverse-text address {
 
 .grid-view .post-thumb {
     height: 250px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 #results-container {
     margin: 0;

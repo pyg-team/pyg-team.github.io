@@ -1,40 +1,42 @@
 ---
-title: KumoML
-email: matthias.fey@tu-dortmund.de
-email_2: jiaxuan@cs.stanford.edu
-description: PyG is the go-to library for Graph Neural Networks. We hope to support everything that you will need to build a graph machine learning pipeline.
+title: PyG
+email: team@pyg.org
+email_2:
+description: The ultimate library for Graph Neural Networks, built upon PyTorch. Build graph learning pipelines with ease.
 black_logo_1x: "/assets/images/logo_pyg.png"
 black_logo_2x: "/assets/images/logo_pyg@2x.png"
 light_logo_1x: "/assets/images/logo_pyg.png"
 light_logo_2x: "/assets/images/logo_pyg@2x.png"
 #address_01: Moonshine St. 14/05 <br /> Light City, London
 phone_number: "+00 (123) 456 78 90"
-copyright_text: "© 2021 KumoML.  All rights reserved."
+copyright_text: "© 2021 PyG.  All rights reserved."
 google_analytics:
   enable: false
   key: UA-664136761-1
-social_accounts:
-  title: Follow Us
-  links:
-  - url: "#"
-    icon: jam jam-twitter
-  - url: "#"
-    icon: jam jam-facebook
-  - url: "#"
-    icon: jam jam-instagram
-  - url: "#"
-    icon: jam jam-vimeo
-  - url: "#"
-    icon: jam jam-youtube
+#social_accounts:
+#  title: Follow Us
+#  links:
+#  - url: "#"
+#    icon: jam jam-twitter
+#  - url: "#"
+#    icon: jam jam-facebook
+#  - url: "#"
+#    icon: jam jam-instagram
+#  - url: "#"
+#    icon: jam jam-vimeo
+#  - url: "#"
+#    icon: jam jam-youtube
 external_links:
   title: Learn More
   links:
-  - url: "https://github.com/rusty1s/pytorch_geometric"
+  - url: "https://github.com/pyg-team/pytorch_geometric"
     text: Github
   - url: "https://pytorch-geometric.readthedocs.io/en/latest/"
     text: Documentation
   - url: "https://torchgeometricco.slack.com/ssb/redirect"
-    text: Join slack
+    text: Join Slack
+  - url: "https://github.com/pyg-team/pytorch_geometric/discussions"
+    text: Github Discussions
 #  - url: "#"
 #    text: About Us
 #  - url: "#"

@@ -2,10 +2,15 @@
 layout: default
 slider_area:
   enable: true
-  title: "PyG is the go-to library for Graph Neural Networks"
-  sub_title: "We hope to support everything that you will need to build a graph machine learning pipeline"
-  button_text: "Try it out"
-  button_url: "https://pytorch-geometric.readthedocs.io/en/latest/"
+  title: "The ultimate library for Graph Neural Networks"
+  sub_title: "Build graph learning pipelines with ease"
+  button_text: "Github"
+  button_url: "https://github.com/pyg-team/pytorch_geometric"
+  button_text2: "Docs"
+  button_url2: "https://pytorch-geometric.readthedocs.io/en/latest/"
+  button_text3: "Join Slack"
+  button_url3: "https://join.slack.com/t/torchgeometricco/shared_invite/zt-p6br3yuo-BxRoe36OHHLF6jYU8xHtBA"
+
   slider_images:
     img_01: "/assets/images/art/rocket1.png"
     img_02: "/assets/images/art/rocket2.png"
@@ -13,30 +18,61 @@ slider_area:
     img_04: "/assets/images/art/rocket4.png"
 
 features_area:
-  enable: false
-  title: "What We Do?"
-  sub_title: "The full service we are offering is specifically designed to meet your business needs."
+  enable: true
+  title: "What is PyG?"
+  sub_title: "PyG (PyTorch Geometric) is a library built upon PyTorch to easily write and train Graph Neural Networks (GNNs) for a wide range of applications related to structured data.
+PyG is both friendly to machine learning researchers and first-time users of machine learning toolkits"
   features:
-    - title: "SEO Services"
+    - title: "Easy-to-use and unified API"
       icon: "jam jam-search"
       icon_color: "blue"
-      icon_url: "https://github.com/rusty1s/pytorch_geometric"
-      description: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo."
+      description: "Spend less time worrying about the low-level mechanics of implementing and working with Graph Neural Networks. All it takes is 10-20 lines of code to get started training a custom GNN model."
 
-    - title: "Web Design"
-      icon: "jam jam-layout"
+    - title: "PyG is PyTorch-on-the-rocks"
+      icon: "jam jam-rocket"
       icon_color: "green"
-      description: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo."
+      description: "PyG utilizes a tensor-centric API and keeps design principles close to vanilla PyTorch. If you are already familiar with PyTorch, utilizing PyG is straightforward."
 
-    - title: "Social Engagement"
+    - title: "Comprehensive and flexible"
       icon: "jam jam-share-alt"
       icon_color: "pink"
-      description: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo."
+      description: "PyG covers a large number of state-of-the-art GNN architectures and training and scalability procedures, and can easily be extended to fit your specific use-case or conduct your own GNN research."
 
-    - title: "Content Marketing"
-      icon: "jam jam-task-list"
+    - title: "Powerful API for designing GNNs"
+      icon: "jam jam-microchip"
       icon_color: "purple"
-      description: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo."
+      description: "The new GraphGym API in PyG can help users easily reproduce GNN experiments, launching and analyzing thousands of GNN experiments, and registering customized modules to the GNN learning pipeline."
+
+
+
+our_team:
+  enable: true
+  title: "The core PyG team"
+  sub_title:
+  features:
+    - title: "Matthias Fey"
+      icon: "https://github.com/rusty1s.png"
+      description: "Core lead"
+
+    - title: "Jiaxuan You"
+      icon: "https://github.com/jiaxuanyou.png"
+      description: "Core lead"
+
+    - title: "Rex Ying"
+      icon: "/assets/images/misc/rex.jpg"
+      description: "Core contributor"
+
+    - title: "Jan Eric Lenssen"
+      icon: "/assets/images/misc/jan.jpg"
+      description: "Core contributor"
+
+    - title: "Yue Zhao"
+      icon: "https://github.com/yzhao062.png"
+      description: "Core contributor"
+
+    - title: "Jure Leskovec"
+      icon: "/assets/images/misc/jure.jpg"
+      description: "Advisor"
 
 two_columns_one:
   enable: false
@@ -167,7 +203,7 @@ testimonials:
       designation: "Sales Specialist"
 
 subscribe_area:
-  enable: false
+  enable: True
   title: "Analyze Now"
   sub_title: "Wonder how much faster your website can go? Easily check your SEO Score now."
   action_email: "tortoizthemes@gmail.com"
@@ -212,7 +248,7 @@ subscribe_area:
              data-y="['middle','middle','middle','middle']" 
              data-hoffset="['260','260','260','260']" 
              data-voffset="['60','60','60','60']" 
-             data-frames='[{"delay":600,"speed":1200,"frame":"0","from":"y:bottom;rX:90deg;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
+             data-frames='[{"delay":300,"speed":1200,"frame":"0","from":"y:bottom;rX:90deg;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
              data-visibility="['on','on','on','off']" 
              data-width="none" 
              data-height="none" 
@@ -221,7 +257,7 @@ subscribe_area:
              data-responsive_offset="on" 
              data-basealign="slide" style="z-index: 5;">
              <img data-lazyload="" src="{{page.slider_area.slider_images.img_02}}" 
-             data-ww="['220','220','220','220']" 
+             data-ww="['330','330','330','330']"
              data-hh="auto" alt="" />
            </div>
 	       <!-- /.tp-caption -->
@@ -278,7 +314,7 @@ subscribe_area:
              data-width="['500','500','420','340']" 
              data-textAlign="['left','left','left','center']" 
              data-whitespace="['normal','normal','normal','normal']" 
-             data-frames='[{"delay":1000,"speed":1200,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+             data-frames='[{"delay":500,"speed":1200,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
              data-responsive="on" 
              data-responsive_offset="on" style="z-index: 9;"> {{page.slider_area.title}}
         </div>
@@ -295,7 +331,7 @@ subscribe_area:
              data-width="['500','500','420','340']" 
              data-textAlign="['left','left','left','center']" 
              data-whitespace="['normal','normal','normal','normal']" 
-             data-frames='[{"delay":1500,"speed":1200,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+             data-frames='[{"delay":750,"speed":1200,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
              data-responsive="on" 
              data-responsive_offset="on" style="z-index: 9;"> {{page.slider_area.sub_title}}
          </div>
@@ -309,13 +345,42 @@ subscribe_area:
              data-voffset="['75','75','75','135']" 
              data-width="['auto','auto','auto','auto']" 
              data-textAlign="['left','left','left','center']" 
-             data-frames='[{"delay":2000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
+             data-frames='[{"delay":1000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
              data-responsive="on" 
              data-responsive_offset="on" style="z-index: 9;" href="{{page.slider_area.button_url}}"> 
              {{page.slider_area.button_text}}
         </a>
-	    <!-- /.tp-caption -->
-	    {% endif %}
+          {% endif %}
+          {% if page.slider_area.button_text2 %}
+          <a class="tp-caption btn btn-l btn-default"
+             data-x="['left','left','left','center']"
+             data-y="middle"
+             data-hoffset="['180','160','160','130']"
+             data-voffset="['75','75','75','135']"
+             data-width="['auto','auto','auto','auto']"
+             data-textAlign="['left','left','left','center']"
+             data-frames='[{"delay":1000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+             data-responsive="on"
+             data-responsive_offset="on" style="z-index: 9;" href="{{page.slider_area.button_url2}}">
+             {{page.slider_area.button_text2}}
+        </a>
+          {% endif %}
+          {% if page.slider_area.button_text3 %}
+          <a class="tp-caption btn btn-l btn-default"
+             data-x="['left','left','left','center']"
+             data-y="middle"
+             data-hoffset="['300','280','280','250']"
+             data-voffset="['75','75','75','135']"
+             data-width="['auto','auto','auto','auto']"
+             data-textAlign="['left','left','left','center']"
+             data-frames='[{"delay":1000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+             data-responsive="on"
+             data-responsive_offset="on" style="z-index: 9;" href="{{page.slider_area.button_url3}}">
+             {{page.slider_area.button_text3}}
+        </a>
+          {% endif %}
+
+
         </li>
       </ul>
       <div class="tp-bannertimer tp-bottom"></div>
@@ -356,6 +421,45 @@ subscribe_area:
       </div>
       {% endfor %}
     </div>
+
+<!--    <div class="wrapper white-wrapper">-->
+<!--  <div class="container inner pt-100">-->
+    <div class="space140"></div>
+  	{% if page.our_team.title %}
+    <div class="row">
+    	<div class="col-md-7 mx-auto">
+		    <h2 class="title-color color-gray text-center">{{page.our_team.title}}</h2>
+		    {% endif %}
+		    {% if page.our_team.sub_title %}
+		     <h3 class="display-3 text-center">{{page.our_team.sub_title}}</h3>
+		    {% endif %}
+		    <div class="space40"></div>
+    	</div>
+    </div>
+    <div class="row text-center gutter-60">
+      {% for features in page.our_team.features %}
+      <div class="col-md-6 col-lg-3">
+<!--        <div class="icon icon-blob icon-blob-{{features.icon_color}} color-{{features.icon_color}} mb-20">-->
+<!--        	<i class="{{features.icon}}"></i> -->
+        <div class="img-blob blob1_large">
+        <img src="{{features.icon}}">
+          </div>
+<!--        </div>-->
+
+        {% if features.title %}
+         <h5>{{features.title}}</h5>
+        {% endif %}
+        {% if features.sub_title %}
+        <p>{{features.sub_title}}</p>
+        {% endif %}
+        <p>{{features.description}}</p>
+      </div>
+      <!--/column -->
+      {% endfor %}
+<!--    </div>-->
+    <!--/.row -->
+
+
     <!--/.row -->
     {% if page.two_columns_one.enable %}
     <div class="two-column-one"> 
@@ -437,7 +541,7 @@ subscribe_area:
     </div>
     {% endif %}
     {% if page.two_columns_two.enable %}
-    <div class="two-columns-two"> 
+    <div class="two-columns-two">
     <div class="space140"></div>
     <div class="row align-items-center">
       {% if page.two_columns_two.image %}
@@ -474,168 +578,168 @@ subscribe_area:
 </div>
 <!-- /.wrapper -->
 {% endif %}
-  <div class="wrapper light-wrapper">
-    <div class="container inner">
-      {% if page.testimonials.enable %}
-      <div class="testimonials-wrapper"> 
-      <div class="row">
-        <div class="col-md-7 mx-auto">
-          {% if page.testimonials.title %}
-           <h2 class="title-color color-gray text-center mb-30">{{page.testimonials.title}}</h2>
-          {% endif %}
-          {% if page.testimonials.sub_title %}
-           <h3 class="display-3 text-center">{{page.testimonials.sub_title}}</h3>
-          {% endif %}
-        </div>
-      </div>
-      <div class="space20"></div>
-      <div class="grid-view">
-        <div class="carousel owl-carousel gap-small" data-margin="0" data-dots="true" data-autoplay="false" data-autoplay-timeout="5000" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "2"}, "1140":{"items": "3"}}'>
-          {% for feedback in page.testimonials.feedback %}
-          <div class="item">
-            <div class="item-inner">
-              <div class="bg-white shadow p-3">
-                <blockquote>
-                  <p>"{{feedback.quote}}"</p>
-                  <div class="blockquote-details">
-                    {% if feedback.image %}
-                    <div class="img-blob blob1">
-                      <img src="{{feedback.image}}" alt="{{feedback.name}}"/>
-                    </div>
-                    {% endif %}
-                    <div class="info">
-                      <h6 class="mb-0">{{feedback.name}}</h6>
-                      <span class="meta mb-0">{{feedback.designation}}</span>
-                    </div>
-                  </div>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-          <!-- /.item -->
-         {% endfor %}
-        </div>
-        <!-- /.owl-carousel -->
-      </div>
-      <!-- /.grid-view -->
-      </div>
-      {% endif %}
-      <div class="pricing-wrapper">
-       <div class="container inner">
-        {% assign pricing_data = page.pricing_table %} 
-        {% if pricing_data.enable %}
-        <div class="row">
-            <div class="col-lg-5 pr-50 pr-md-15">
-                <h2 class="title-color color-gray">{{pricing_data.title}}</h2>
-                <h3 class="display-3">{{pricing_data.sub_title}}</h3>
-                <div class="space20"></div>
-                <p>{{pricing_data.description}}</p>
-                <div class="space10"></div>
-                {% if pricing_data.pricing_url %}
-                <a href="{{pricing_data.pricing_url}}" class="btn">See All Prices</a>
-                {% endif %}
-            </div>
-            <!--/column -->
-            <div class="space70 d-none d-md-block d-lg-none"></div>
-            <div class="space20 d-md-none"></div>
-            <div class="col-lg-7">
-                <div class="pricing-wrapper">
-                    <div class="row no-gutters">
-                        {% for pricing in pricing_data.plans %}
-                        <div class="col-md-6">
-                            <div class="pricing panel box bg-white shadow">
-                                <div class="panel-heading">
-                                    <div class="prices color-dark">
-                                        <div class="price price-show"><span class="price-currency">$</span><span class="price-value">{{pricing.monthly_price}}</span> <span class="price-duration">month</span></div>
-                                    </div>
-                                    <h4 class="panel-title mb-0">{{pricing.title}}</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <table class="table">
-                                        {% for features in pricing.features %}
-                                        <tr>
-                                            <td>{{features}}</td>
-                                        </tr>
-                                        {% endfor %}
-                                    </table>
-                                </div>
-                                <div class="panel-footer"><a href="{{pricing.pricing_url}}" class="btn" role="button">Choose Plan</a></div>
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endif %}
-      </div>
-      {% if page.about_us.enable %}
-      <div class="about-wrapper">
-        <div class="space140"></div>
-        <div class="row align-items-center">
-          {% if page.about_us.image %}
-          <div class="col-lg-6">
-            <figure>
-              <img src="{{page.about_us.image}}" alt="{{page.about_us.title}}"/>
-            </figure>
-          </div>
-          {% endif %}
-          <div class="space50 d-none d-md-block d-lg-none"></div>
-          <div class="space10 d-md-none"></div>
-          <div class="col-lg-6 pl-60 pl-md-15">
-            {% if page.about_us.title %}
-             <h2 class="title-color color-gray">{{page.about_us.title}}</h2>
-            {% endif %}
-            {% if page.about_us.sub_title %}
-             <h3 class="display-3">{{page.about_us.sub_title}}</h3>
-            {% endif %}
-            <div class="space20"></div>
-            <p>{{page.about_us.description}}</p>
-            <div class="space10"></div>
-            {% if page.about_us.button_text %}
-             <a href="{{page.about_us.button_url}}" class="btn btn-default">{{page.about_us.button_text}}</a>
-            {% endif %}
-          </div>
-          <!--/column -->
-        </div>
-        <!--/.row -->
-      </div>
-      {% endif %}
-    </div>
-  </div>
-  {% if page.subscribe_area.enable %}
-  <div class="subscribe-area">
-    <div class="wrapper bg-opacity-default">
-      <div class="container inner">
-        <div class="row text-center">
-          <div class="col-lg-8 offset-lg-2">
-            {% if page.subscribe_area.title %}
-             <h2 class="title-color color-gray">{{page.subscribe_area.title}}</h2>
-            {% endif %}
-            {% if page.subscribe_area.sub_title %}
-             <h3 class="display-3">{{page.subscribe_area.sub_title}}</h3>
-            {% endif %}
-          </div>
-        </div>
-        <div class="space30"></div>
-        <div class="row">
-          <div class="col-md-6 offset-md-3">
-            <form class="fields-white" action="https://formsubmit.io/send/{{page.subscribe_area.action_email}}" target="_blank">
-              <div class="input-group">
-                <input type="email"  name="user_email" class="email form-control mb-0 mr-2 mb-sm-0" placeholder="Email Address" required>
-                <button type="submit" class="btn btn-rounded btn-default mr-0 mb-0 pull-right">{{page.subscribe_area.button_text}}</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      {% if page.subscribe_area.image %}
-      <figure style="margin-bottom:-3px;">
-        <img src="{{page.subscribe_area.image}}" alt="subscribe"/>
-      </figure>
-      {% endif %}
-    </div>
-  </div>
-  {% endif %}
+<!--  <div class="wrapper light-wrapper">-->
+<!--    <div class="container inner">-->
+<!--      {% if page.testimonials.enable %}-->
+<!--      <div class="testimonials-wrapper"> -->
+<!--      <div class="row">-->
+<!--        <div class="col-md-7 mx-auto">-->
+<!--          {% if page.testimonials.title %}-->
+<!--           <h2 class="title-color color-gray text-center mb-30">{{page.testimonials.title}}</h2>-->
+<!--          {% endif %}-->
+<!--          {% if page.testimonials.sub_title %}-->
+<!--           <h3 class="display-3 text-center">{{page.testimonials.sub_title}}</h3>-->
+<!--          {% endif %}-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="space20"></div>-->
+<!--      <div class="grid-view">-->
+<!--        <div class="carousel owl-carousel gap-small" data-margin="0" data-dots="true" data-autoplay="false" data-autoplay-timeout="5000" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "2"}, "1140":{"items": "3"}}'>-->
+<!--          {% for feedback in page.testimonials.feedback %}-->
+<!--          <div class="item">-->
+<!--            <div class="item-inner">-->
+<!--              <div class="bg-white shadow p-3">-->
+<!--                <blockquote>-->
+<!--                  <p>"{{feedback.quote}}"</p>-->
+<!--                  <div class="blockquote-details">-->
+<!--                    {% if feedback.image %}-->
+<!--                    <div class="img-blob blob1">-->
+<!--                      <img src="{{feedback.image}}" alt="{{feedback.name}}"/>-->
+<!--                    </div>-->
+<!--                    {% endif %}-->
+<!--                    <div class="info">-->
+<!--                      <h6 class="mb-0">{{feedback.name}}</h6>-->
+<!--                      <span class="meta mb-0">{{feedback.designation}}</span>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </blockquote>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          &lt;!&ndash; /.item &ndash;&gt;-->
+<!--         {% endfor %}-->
+<!--        </div>-->
+<!--        &lt;!&ndash; /.owl-carousel &ndash;&gt;-->
+<!--      </div>-->
+<!--      &lt;!&ndash; /.grid-view &ndash;&gt;-->
+<!--      </div>-->
+<!--      {% endif %}-->
+<!--      <div class="pricing-wrapper">-->
+<!--       <div class="container inner">-->
+<!--        {% assign pricing_data = page.pricing_table %}-->
+<!--        {% if pricing_data.enable %}-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-5 pr-50 pr-md-15">-->
+<!--                <h2 class="title-color color-gray">{{pricing_data.title}}</h2>-->
+<!--                <h3 class="display-3">{{pricing_data.sub_title}}</h3>-->
+<!--                <div class="space20"></div>-->
+<!--                <p>{{pricing_data.description}}</p>-->
+<!--                <div class="space10"></div>-->
+<!--                {% if pricing_data.pricing_url %}-->
+<!--                <a href="{{pricing_data.pricing_url}}" class="btn">See All Prices</a>-->
+<!--                {% endif %}-->
+<!--            </div>-->
+<!--            &lt;!&ndash;/column &ndash;&gt;-->
+<!--            <div class="space70 d-none d-md-block d-lg-none"></div>-->
+<!--            <div class="space20 d-md-none"></div>-->
+<!--            <div class="col-lg-7">-->
+<!--                <div class="pricing-wrapper">-->
+<!--                    <div class="row no-gutters">-->
+<!--                        {% for pricing in pricing_data.plans %}-->
+<!--                        <div class="col-md-6">-->
+<!--                            <div class="pricing panel box bg-white shadow">-->
+<!--                                <div class="panel-heading">-->
+<!--                                    <div class="prices color-dark">-->
+<!--                                        <div class="price price-show"><span class="price-currency">$</span><span class="price-value">{{pricing.monthly_price}}</span> <span class="price-duration">month</span></div>-->
+<!--                                    </div>-->
+<!--                                    <h4 class="panel-title mb-0">{{pricing.title}}</h4>-->
+<!--                                </div>-->
+<!--                                <div class="panel-body">-->
+<!--                                    <table class="table">-->
+<!--                                        {% for features in pricing.features %}-->
+<!--                                        <tr>-->
+<!--                                            <td>{{features}}</td>-->
+<!--                                        </tr>-->
+<!--                                        {% endfor %}-->
+<!--                                    </table>-->
+<!--                                </div>-->
+<!--                                <div class="panel-footer"><a href="{{pricing.pricing_url}}" class="btn" role="button">Choose Plan</a></div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        {% endfor %}-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        {% endif %}-->
+<!--      </div>-->
+<!--      {% if page.about_us.enable %}-->
+<!--      <div class="about-wrapper">-->
+<!--        <div class="space140"></div>-->
+<!--        <div class="row align-items-center">-->
+<!--          {% if page.about_us.image %}-->
+<!--          <div class="col-lg-6">-->
+<!--            <figure>-->
+<!--              <img src="{{page.about_us.image}}" alt="{{page.about_us.title}}"/>-->
+<!--            </figure>-->
+<!--          </div>-->
+<!--          {% endif %}-->
+<!--          <div class="space50 d-none d-md-block d-lg-none"></div>-->
+<!--          <div class="space10 d-md-none"></div>-->
+<!--          <div class="col-lg-6 pl-60 pl-md-15">-->
+<!--            {% if page.about_us.title %}-->
+<!--             <h2 class="title-color color-gray">{{page.about_us.title}}</h2>-->
+<!--            {% endif %}-->
+<!--            {% if page.about_us.sub_title %}-->
+<!--             <h3 class="display-3">{{page.about_us.sub_title}}</h3>-->
+<!--            {% endif %}-->
+<!--            <div class="space20"></div>-->
+<!--            <p>{{page.about_us.description}}</p>-->
+<!--            <div class="space10"></div>-->
+<!--            {% if page.about_us.button_text %}-->
+<!--             <a href="{{page.about_us.button_url}}" class="btn btn-default">{{page.about_us.button_text}}</a>-->
+<!--            {% endif %}-->
+<!--          </div>-->
+<!--          &lt;!&ndash;/column &ndash;&gt;-->
+<!--        </div>-->
+<!--        &lt;!&ndash;/.row &ndash;&gt;-->
+<!--      </div>-->
+<!--      {% endif %}-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  {% if page.subscribe_area.enable %}-->
+<!--  <div class="subscribe-area">-->
+<!--    <div class="wrapper bg-opacity-default">-->
+<!--      <div class="container inner">-->
+<!--        <div class="row text-center">-->
+<!--          <div class="col-lg-8 offset-lg-2">-->
+<!--            {% if page.subscribe_area.title %}-->
+<!--             <h2 class="title-color color-gray">{{page.subscribe_area.title}}</h2>-->
+<!--            {% endif %}-->
+<!--            {% if page.subscribe_area.sub_title %}-->
+<!--             <h3 class="display-3">{{page.subscribe_area.sub_title}}</h3>-->
+<!--            {% endif %}-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="space30"></div>-->
+<!--        <div class="row">-->
+<!--          <div class="col-md-6 offset-md-3">-->
+<!--            <form class="fields-white" action="https://formsubmit.io/send/{{page.subscribe_area.action_email}}" target="_blank">-->
+<!--              <div class="input-group">-->
+<!--                <input type="email"  name="user_email" class="email form-control mb-0 mr-2 mb-sm-0" placeholder="Email Address" required>-->
+<!--                <button type="submit" class="btn btn-rounded btn-default mr-0 mb-0 pull-right">{{page.subscribe_area.button_text}}</button>-->
+<!--              </div>-->
+<!--            </form>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      {% if page.subscribe_area.image %}-->
+<!--      <figure style="margin-bottom:-3px;">-->
+<!--        <img src="{{page.subscribe_area.image}}" alt="subscribe"/>-->
+<!--      </figure>-->
+<!--      {% endif %}-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  {% endif %}-->
   {% include footer_2.html light_logo="true" %}
 </div>

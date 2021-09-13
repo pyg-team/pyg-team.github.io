@@ -4,16 +4,21 @@ main_menu:
 #    url: "/"
 #    menu_type: "dropdown"
 
+  - text: "News"
+    url: "/blogs/index"
+    menu_type: "none"
+
+
   - text: "Resources"
     url: "/"
     menu_type: "dropdown"
     submenu:
-        - text: "Github"
-          url: "https://github.com/rusty1s/pytorch_geometric"
-        - text: "Documentation"
-          url: "https://pytorch-geometric.readthedocs.io/en/latest/"
-        - text: "Core team"
-          url: "/"
+      - text: "Github"
+        url: "https://github.com/pyg-team/pytorch_geometric"
+      - text: "Documentation"
+        url: "https://pytorch-geometric.readthedocs.io/en/latest/"
+      - text: "Contact us"
+        url: "mailto:team@pyg.org"
 
 
 #  - text: "Features"

@@ -1,5 +1,5 @@
-# KumoML_web
- Website for KumoML.org
+# PyG website
+ Website for PyG.org
 ## Deploy the website
 
 Follow https://jekyllrb.com/docs/ to set up the jekyll environment. Concretely:
