@@ -5,7 +5,7 @@ main_menu:
 #    menu_type: "dropdown"
 
   - text: "News"
-    url: "/blogs/index"
+    url: "/news/index"
     menu_type: "none"
 
 
