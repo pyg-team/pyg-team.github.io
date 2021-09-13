@@ -4,6 +4,10 @@ title: "Stanford Graph Learning Workshop 2021"
 date: 2021-09-12 23:30:00 +0800
 post_image: "/assets/images/posts/stanford_workshop.png"
 slider_post: true
+tags:
+  - blog
+  - github-page
+  - jekyll
 ---
 
 Stanford Graph Learning Workshop will be held on Thursday, Sept 16 2021. 
