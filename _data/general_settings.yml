@@ -9,7 +9,7 @@ light_logo_1x: "/assets/images/logo_pyg.png"
 light_logo_2x: "/assets/images/logo_pyg@2x.png"
 #address_01: Moonshine St. 14/05 <br /> Light City, London
 phone_number: "+00 (123) 456 78 90"
-copyright_text: "© 2021 PyG.  All rights reserved."
+copyright_text: "© 2021 KumoML.  All rights reserved."
 google_analytics:
   enable: false
   key: UA-664136761-1
