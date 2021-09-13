@@ -8,18 +8,17 @@ main_menu:
     url: "/news/index"
     menu_type: "none"
 
+  - text: Docs
+    url: "https://pytorch-geometric.readthedocs.io/en/latest/"
+    menu_type: "none"
 
-  - text: "Resources"
-    url: "/"
-    menu_type: "dropdown"
-    submenu:
-      - text: "Github"
-        url: "https://github.com/pyg-team/pytorch_geometric"
-      - text: "Documentation"
-        url: "https://pytorch-geometric.readthedocs.io/en/latest/"
-      - text: "Contact us"
-        url: "mailto:team@pyg.org"
+  - text: Discussions
+    url: "https://github.com/pyg-team/pytorch_geometric/discussions"
+    menu_type: "none"
 
+  - text: GitHub
+    url: "https://github.com/pyg-team/pytorch_geometric"
+    menu_type: "none"
 
 #  - text: "Features"
 #    url: "/"
