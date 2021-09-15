@@ -22,21 +22,25 @@ PyG is both friendly to machine learning researchers and first-time users of mac
     - title: "Easy-to-use and unified API"
       icon: "jam jam-search"
       icon_color: "blue"
+      url: "https://github.com/pyg-team/pytorch_geometric#quick-tour-for-new-users"
       description: "Spend less time worrying about the low-level mechanics of implementing and working with Graph Neural Networks. All it takes is 10-20 lines of code to get started training a custom GNN model."
 
     - title: "PyTorch-on-the-rocks"
       icon: "jam jam-rocket"
       icon_color: "green"
+      url: "https://github.com/pyg-team/pytorch_geometric#architecture-overview"
       description: "PyG utilizes a tensor-centric API and keeps design principles close to vanilla PyTorch. If you are already familiar with PyTorch, utilizing PyG is straightforward."
 
     - title: "Comprehensive and flexible"
       icon: "jam jam-share-alt"
       icon_color: "pink"
+      url: "https://github.com/pyg-team/pytorch_geometric#architecture-overview"
       description: "PyG covers a large number of state-of-the-art GNN architectures and training and scalability procedures, and can easily be extended to fit your specific use-case or conduct your own GNN research."
 
     - title: "Powerful API for designing GNNs"
       icon: "jam jam-microchip"
       icon_color: "purple"
+      url: "https://pytorch-geometric.readthedocs.io/en/latest/notes/graphgym.html"
       description: "The new GraphGym API in PyG can help users easily reproduce GNN experiments, launching and analyzing thousands of GNN experiments, and registering customized modules to the GNN learning pipeline."
 
 our_team:
@@ -402,9 +406,9 @@ subscribe_area:
     <div class="row text-center gutter-60">
       {% for features in page.features_area.features %}
       <div class="col-md-6 col-lg-3">
-        <div class="icon icon-blob icon-blob-{{features.icon_color}} color-{{features.icon_color}} mb-20">
-        	<i class="{{features.icon}}"></i> 
-        </div>
+        <a href="{{features.url}}"><div class="icon icon-blob icon-blob-{{features.icon_color}} color-{{features.icon_color}} mb-20">
+          <i class="{{features.icon}}"></i>
+        </div></a>
         {% if features.title %}
          <h5>{{features.title}}</h5>
         {% endif %}
