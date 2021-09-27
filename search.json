@@ -1,0 +1,30 @@
+[
+  
+    {
+      "title"    : "GraphGym &amp; PyG Integration",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/GraphGym-PyG-integration",
+      "date"     : "2021-09-14 15:00:00 +0000",
+      "desc"     : "GraphGym & PyG Integration"
+    } ,
+  
+    {
+      "title"    : "Stanford Graph Learning Workshop 2021",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/stanford-graph-learning-workshop",
+      "date"     : "2021-09-12 15:30:00 +0000",
+      "desc"     : "Stanford Graph Learning Workshop 2021"
+    } ,
+  
+    {
+      "title"    : "PyG 2.0 Released",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/PyG2.0-released",
+      "date"     : "2021-09-12 15:00:00 +0000",
+      "desc"     : "PyG 2.0 Released"
+    } 
+  
+]

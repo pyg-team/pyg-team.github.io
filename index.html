@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="/assets/images/favicon.ico"/>
+  <title> PyG</title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/plugins.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/settings.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/layers.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/navigation.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/type/type.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/color/leaf.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,500,600,700,800&display=swap" rel="stylesheet"/>
+  
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-83R1969V5C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-83R1969V5C');
+</script>
+  
+</head>
+<body >
+  <div class="content-wrapper">
+    <link rel="stylesheet" type="text/css" href="/assets/css/color/blue.css"/>
+<div class="content-wrapper">
+<nav class="navbar absolute transparent navbar-expand-lg nav-uppercase">
+  <div class="container flex-row justify-content-center">
+    <div class="navbar-brand">
+      <a href="http://pyg.org">
+        
+         <img src="/assets/images/logo_pyg.png" srcset="/assets/images/logo_pyg.png 1x, /assets/images/logo_pyg@2x.png 2x" class=" header-logo  " alt="PyG"/>
+      </a>
+    </div>
+    <div class="navbar-other ml-auto order-lg-3">
+      <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
+        <li class="nav-item">
+          <div class="navbar-hamburger d-lg-none d-xl-none ml-auto"><button class="hamburger animate plain" data-toggle="offcanvas-nav"><span></span></button></div>
+        </li>
+<!--        <li class="nav-item d-none d-lg-block pl-0"><a href="https://github.com/pyg-team/pytorch_geometric" class="btn btn-default m-0">Github</a></li>-->
+      </ul>
+      <!-- /.navbar-nav -->
+    </div>
+    <!-- /.navbar-other -->
+    <div class="navbar-collapse offcanvas-nav">
+      <div class="offcanvas-header d-lg-none d-xl-none">
+        <a href="http://pyg.org">
+          <img src="/assets/images/logo_pyg.png" srcset="/assets/images/logo_pyg.png 1x, /assets/images/logo_pyg@2x.png 2x" alt="PyG"/></a>
+        <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>
+      </div>
+      <ul class="navbar-nav mx-auto">
+        
+        
+        
+          <a class="nav-link" href="/news/index">News</a>
+        
+        
+        
+        
+          <a class="nav-link" href="https://pytorch-geometric.readthedocs.io/en/latest/">Docs</a>
+        
+        
+        
+        
+          <a class="nav-link" href="https://github.com/pyg-team/pytorch_geometric/discussions">Discussions</a>
+        
+        
+        
+        
+          <a class="nav-link" href="https://github.com/pyg-team/pytorch_geometric">GitHub</a>
+        
+        
+        
+        
+          <a class="nav-link" href="https://join.slack.com/t/torchgeometricco/shared_invite/zt-p6br3yuo-BxRoe36OHHLF6jYU8xHtBA">Join Slack</a>
+        
+        
+      </ul>
+      <!-- /.navbar-nav -->
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- /.navbar -->
+<div class="offcanvas-info inverse-text">
+  <button class="plain offcanvas-close offcanvas-info-close"><i class="jam jam-close"></i></button>
+  <a href="http://pyg.org">
+    <img src="/assets/images/logo_pyg.png" srcset="/assets/images/logo_pyg.png 1x, /assets/images/logo_pyg@2x.png 2x" class=" header-logo " alt="PyG"/>
+  </a>
+  <div class="space30"></div>
+  <p>PyG is the ultimate library for Graph Neural Networks, built upon PyTorch.</p>
+  <div class="space20"></div>
+  <div class="widget">
+    <h5 class="widget-title">Contact Info</h5>
+      <a href="mailto:team@pyg.org" class="nocolor">team@pyg.org</a>
+  </div>
+  <!-- /.widget -->
+  <div class="widget">
+    
+     <h3 class="widget-title">Links</h3>
+    
+    <ul class="list-unstyled">
+     
+      <li><a href="/news/index" class="nocolor">News</a></li>
+     
+      <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/" class="nocolor">Docs</a></li>
+     
+      <li><a href="https://github.com/pyg-team/pytorch_geometric/discussions" class="nocolor">Discussions</a></li>
+     
+      <li><a href="https://github.com/pyg-team/pytorch_geometric" class="nocolor">GitHub</a></li>
+     
+      <li><a href="https://torchgeometricco.slack.com/ssb/redirect" class="nocolor">Join Slack</a></li>
+     
+    </ul>
+  </div>
+  <!-- /.widget -->
+  <div class="widget">
+    
+    <ul class="social social-mute social-s ml-auto">
+      
+    </ul>
+  </div>
+  <!-- /.widget -->
+</div>
+<!-- /.offcanvas-info -->
+
+<div class="wrapper bg-opacity-default">
+  <div class="rev_slider_wrapper fullwidth-container dark-spinner">
+    <div id="slider7" class="rev_slider fullwidthbanner" data-version="5.4.7">
+      <ul>
+        <li data-transition="fade" data-thumb="">
+         <img src="/assets/images/dummy.png" style="background:transparent" alt="PyG is the ultimate library for Graph Neural Networks"/>
+         
+          <div class="tp-caption" 
+             data-x="['center','center','center','center']" 
+             data-y="['bottom','bottom','bottom','bottom']" 
+             data-hoffset="['0','0','0','0']" 
+             data-voffset="['-2','-2','-2','-2']" 
+             data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+             data-visibility="['on','on','on','on']" 
+             data-width="none" 
+             data-height="none" 
+             data-type="image" 
+             data-responsive="on" 
+             data-responsive_offset="on" 
+             data-basealign="slide" style="z-index: 5;">
+             <img data-lazyload="" src="/assets/images/art/rocket1.png" 
+             data-ww="['100%','100%','100%','100%']" 
+             data-hh="auto" alt="" />	          
+        </div>
+	    <!-- /.tp-caption -->
+	     
+	     
+          <div class="tp-caption" 
+             data-x="['center','center','center','center']" 
+             data-y="['middle','middle','middle','middle']" 
+             data-hoffset="['260','260','260','260']" 
+             data-voffset="['-40','-40','-40','-40']" 
+             data-frames='[{"delay":300,"speed":1200,"frame":"0","from":"y:bottom;rX:90deg;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+             data-visibility="['on','on','on','off']" 
+             data-width="none" 
+             data-height="none" 
+             data-type="image" 
+             data-responsive="on" 
+             data-responsive_offset="on" 
+             data-basealign="slide" style="z-index: 1000;">
+             <img data-lazyload="" src="/assets/images/art/rocket2.png" 
+             data-ww="['530','530','530','530']"
+             data-hh="auto" alt="" />
+           </div>
+	       <!-- /.tp-caption -->
+	      
+	      
+          <div class="tp-caption" 
+             data-x="['center','center','center','center']" 
+             data-y="['middle','middle','middle','middle']" 
+             data-hoffset="['260','260','260','260']" 
+             data-voffset="['-170','-170','-170','-170']" 
+             data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+             data-visibility="['on','on','on','off']" 
+             data-width="none" 
+             data-height="none" 
+             data-type="image" 
+             data-responsive="on" 
+             data-responsive_offset="on" 
+             data-basealign="slide" style="z-index: 6;">
+             <img data-lazyload="" src="/assets/images/art/rocket3.png" 
+             data-ww="['380','380','380','380']" 
+             data-hh="auto" alt="" />
+	      
+         </div>
+	     <!-- /.tp-caption -->
+	    
+        
+          <div class="tp-caption" 
+             data-x="['center','center','center','center']" 
+             data-y="['middle','middle','middle','middle']" 
+             data-hoffset="['300','300','300','300']" 
+             data-voffset="['70','70','70','70']" 
+             data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+             data-visibility="['on','on','on','off']" 
+             data-width="none" 
+             data-height="none" 
+             data-type="image" 
+             data-responsive="on" 
+             data-responsive_offset="on" 
+             data-basealign="slide" style="z-index: 5;">
+             <img data-lazyload="" src="/assets/images/art/rocket4.png" 
+             data-ww="['480','480','480','480']" 
+             data-hh="auto" alt="" />
+         </div>
+	      <!-- /.tp-caption -->
+	      
+	      
+          <div class="tp-caption font-weight-500 color-dark" 
+             data-x="['left','left','left','center']" 
+             data-y="middle" 
+             data-hoffset="['50','30','30','0']" 
+             data-voffset="['-125','-125','-125','-105']" 
+             data-fontsize="['40','40','34','36']" 
+             data-lineheight="['50','50','44','46']" 
+             data-width="['500','500','420','340']" 
+             data-textAlign="['left','left','left','center']" 
+             data-whitespace="['normal','normal','normal','normal']" 
+             data-frames='[{"delay":500,"speed":1200,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+             data-responsive="on" 
+             data-responsive_offset="on" style="z-index: 9;"> PyG is the ultimate library for Graph Neural Networks
+        </div>
+        
+	    <!-- /.tp-caption -->
+	    
+          <div class="tp-caption font-weight-300 color-dark" 
+             data-x="['left','left','left','center']" 
+             data-y="middle" 
+             data-hoffset="['50','30','30','0']"
+             data-voffset="['-20','-20','-20','30']" 
+             data-fontsize="['26','26','22','24']" 
+             data-lineheight="['36','36','32','34']" 
+             data-width="['500','500','420','340']" 
+             data-textAlign="['left','left','left','center']" 
+             data-whitespace="['normal','normal','normal','normal']" 
+             data-frames='[{"delay":750,"speed":1200,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+             data-responsive="on" 
+             data-responsive_offset="on" style="z-index: 9;"> Build graph learning pipelines with ease.
+         </div>
+	     <!-- /.tp-caption -->
+	     
+	     
+          <a class="tp-caption btn btn-l btn-default" 
+             data-x="['left','left','left','center']" 
+             data-y="middle" 
+             data-hoffset="['50','30','30','0']"
+             data-voffset="['75','75','75','135']" 
+             data-width="['auto','auto','auto','auto']" 
+             data-textAlign="['left','left','left','center']" 
+             data-frames='[{"delay":1000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+             data-responsive="on" 
+             data-responsive_offset="on" style="z-index: 9;" href="https://join.slack.com/t/torchgeometricco/shared_invite/zt-p6br3yuo-BxRoe36OHHLF6jYU8xHtBA"> 
+             Join Slack
+        </a>
+          
+          
+          
+
+
+        </li>
+      </ul>
+      <div class="tp-bannertimer tp-bottom"></div>
+    </div>
+    <!-- /.rev_slider -->
+  </div>
+  <!-- /.rev_slider_wrapper -->
+</div>
+<!-- /.wrapper -->
+
+
+<div class="wrapper white-wrapper">
+  <div class="container inner pt-100">
+  	
+    <div class="row">
+    	<div class="col-md-7 mx-auto">
+		    <h2 class="title-color color-gray text-center">What is PyG?</h2>
+		    
+		    
+		     <h3 class="display-3 text-center">PyG is a library built upon PyTorch to easily write and train Graph Neural Networks for a wide range of applications related to structured data. PyG is both friendly to machine learning researchers and first-time users of machine learning toolkits.</h3>
+		    
+		    <div class="space40"></div>
+    	</div>
+    </div>
+    <div class="row text-center gutter-60">
+      
+      <div class="col-md-6 col-lg-3">
+        <a href="https://github.com/pyg-team/pytorch_geometric#quick-tour-for-new-users"><div class="icon icon-blob icon-blob-blue color-blue mb-20">
+          <i class="jam jam-search"></i>
+        </div></a>
+        
+         <h5>Easy-to-use and unified API</h5>
+        
+        
+        <p>Spend less time worrying about the low-level mechanics of implementing and working with Graph Neural Networks. All it takes is 10-20 lines of code to get started training a custom GNN model.</p>
+      </div>
+      
+      <div class="col-md-6 col-lg-3">
+        <a href="https://github.com/pyg-team/pytorch_geometric#architecture-overview"><div class="icon icon-blob icon-blob-green color-green mb-20">
+          <i class="jam jam-rocket"></i>
+        </div></a>
+        
+         <h5>PyTorch-on-the-rocks</h5>
+        
+        
+        <p>PyG utilizes a tensor-centric API and keeps design principles close to vanilla PyTorch. If you are already familiar with PyTorch, utilizing PyG is straightforward.</p>
+      </div>
+      
+      <div class="col-md-6 col-lg-3">
+        <a href="https://github.com/pyg-team/pytorch_geometric#architecture-overview"><div class="icon icon-blob icon-blob-pink color-pink mb-20">
+          <i class="jam jam-share-alt"></i>
+        </div></a>
+        
+         <h5>Comprehensive and flexible</h5>
+        
+        
+        <p>PyG covers a large number of state-of-the-art GNN architectures and training and scalability procedures, and can easily be extended to fit your specific use-case or conduct your own GNN research.</p>
+      </div>
+      
+      <div class="col-md-6 col-lg-3">
+        <a href="https://pytorch-geometric.readthedocs.io/en/latest/notes/graphgym.html"><div class="icon icon-blob icon-blob-purple color-purple mb-20">
+          <i class="jam jam-microchip"></i>
+        </div></a>
+        
+         <h5>Powerful API for designing GNNs</h5>
+        
+        
+        <p>The new GraphGym API in PyG can help users easily reproduce GNN experiments, launching and analyzing thousands of GNN experiments, and registering customized modules to the GNN learning pipeline.</p>
+      </div>
+      
+    </div>
+
+<!--    <div class="wrapper white-wrapper">-->
+<!--  <div class="container inner pt-100">-->
+    <div class="space140"></div>
+  	
+    <div class="row">
+    	<div class="col-md-7 mx-auto">
+		    <h2 class="title-color color-gray text-center">The core PyG team</h2>
+		    
+		    
+		    <div class="space40"></div>
+    	</div>
+    </div>
+    <div class="row text-center gutter-60">
+      
+      <div class="col-md-6 col-lg-3">
+<!--        <div class="icon icon-blob icon-blob- color- mb-20">-->
+<!--        	<i class="https://github.com/rusty1s.png"></i> -->
+        <div class="img-blob blob1_large">
+        <img src="https://github.com/rusty1s.png">
+          </div>
+<!--        </div>-->
+
+        
+         <h5>Matthias Fey</h5>
+        
+        
+        <p>Core lead</p>
+      </div>
+      <!--/column -->
+      
+      <div class="col-md-6 col-lg-3">
+<!--        <div class="icon icon-blob icon-blob- color- mb-20">-->
+<!--        	<i class="https://github.com/jiaxuanyou.png"></i> -->
+        <div class="img-blob blob1_large">
+        <img src="https://github.com/jiaxuanyou.png">
+          </div>
+<!--        </div>-->
+
+        
+         <h5>Jiaxuan You</h5>
+        
+        
+        <p>Core lead</p>
+      </div>
+      <!--/column -->
+      
+      <div class="col-md-6 col-lg-3">
+<!--        <div class="icon icon-blob icon-blob- color- mb-20">-->
+<!--        	<i class="/assets/images/misc/rex.jpg"></i> -->
+        <div class="img-blob blob1_large">
+        <img src="/assets/images/misc/rex.jpg">
+          </div>
+<!--        </div>-->
+
+        
+         <h5>Rex Ying</h5>
+        
+        
+        <p>Core contributor</p>
+      </div>
+      <!--/column -->
+      
+      <div class="col-md-6 col-lg-3">
+<!--        <div class="icon icon-blob icon-blob- color- mb-20">-->
+<!--        	<i class="https://github.com/wsad1.png"></i> -->
+        <div class="img-blob blob1_large">
+        <img src="https://github.com/wsad1.png">
+          </div>
+<!--        </div>-->
+
+        
+         <h5>Jinu Sunil</h5>
+        
+        
+        <p>Core contributor</p>
+      </div>
+      <!--/column -->
+      
+      <div class="col-md-6 col-lg-3">
+<!--        <div class="icon icon-blob icon-blob- color- mb-20">-->
+<!--        	<i class="/assets/images/misc/jan.jpg"></i> -->
+        <div class="img-blob blob1_large">
+        <img src="/assets/images/misc/jan.jpg">
+          </div>
+<!--        </div>-->
+
+        
+         <h5>Jan Eric Lenssen</h5>
+        
+        
+        <p>Core contributor</p>
+      </div>
+      <!--/column -->
+      
+      <div class="col-md-6 col-lg-3">
+<!--        <div class="icon icon-blob icon-blob- color- mb-20">-->
+<!--        	<i class="https://github.com/yzhao062.png"></i> -->
+        <div class="img-blob blob1_large">
+        <img src="https://github.com/yzhao062.png">
+          </div>
+<!--        </div>-->
+
+        
+         <h5>Yue Zhao</h5>
+        
+        
+        <p>Core contributor</p>
+      </div>
+      <!--/column -->
+      
+      <div class="col-md-6 col-lg-3">
+<!--        <div class="icon icon-blob icon-blob- color- mb-20">-->
+<!--        	<i class="/assets/images/misc/jure.jpg"></i> -->
+        <div class="img-blob blob1_large">
+        <img src="/assets/images/misc/jure.jpg">
+          </div>
+<!--        </div>-->
+
+        
+         <h5>Jure Leskovec</h5>
+        
+        
+        <p>Advisor</p>
+      </div>
+      <!--/column -->
+      
+<!--    </div>-->
+    <!--/.row -->
+
+
+    <!--/.row -->
+    
+    
+    
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+
+<!--  <div class="wrapper light-wrapper">-->
+<!--    <div class="container inner">-->
+<!--      -->
+<!--      <div class="pricing-wrapper">-->
+<!--       <div class="container inner">-->
+<!--        -->
+<!--        -->
+<!--      </div>-->
+<!--      -->
+<!--    </div>-->
+<!--  </div>-->
+<!--  -->
+<!--  <div class="subscribe-area">-->
+<!--    <div class="wrapper bg-opacity-default">-->
+<!--      <div class="container inner">-->
+<!--        <div class="row text-center">-->
+<!--          <div class="col-lg-8 offset-lg-2">-->
+<!--            -->
+<!--             <h2 class="title-color color-gray">Analyze Now</h2>-->
+<!--            -->
+<!--            -->
+<!--             <h3 class="display-3">Wonder how much faster your website can go? Easily check your SEO Score now.</h3>-->
+<!--            -->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="space30"></div>-->
+<!--        <div class="row">-->
+<!--          <div class="col-md-6 offset-md-3">-->
+<!--            <form class="fields-white" action="https://formsubmit.io/send/tortoizthemes@gmail.com" target="_blank">-->
+<!--              <div class="input-group">-->
+<!--                <input type="email"  name="user_email" class="email form-control mb-0 mr-2 mb-sm-0" placeholder="Email Address" required>-->
+<!--                <button type="submit" class="btn btn-rounded btn-default mr-0 mb-0 pull-right">Analyze</button>-->
+<!--              </div>-->
+<!--            </form>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      -->
+<!--      <figure style="margin-bottom:-3px;">-->
+<!--        <img src="/assets/images/art/rocket1.png" alt="subscribe"/>-->
+<!--      </figure>-->
+<!--      -->
+<!--    </div>-->
+<!--  </div>-->
+<!--  -->
+  <footer class=" dark-wrapper inverse-text ">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-md-12 col-lg-3 text-center text-lg-left">
+        <div class="widget"> 
+          
+            <img src="/assets/images/logo_pyg.png" srcset="/assets/images/logo_pyg.png 1x, /assets/images/logo_pyg@2x.png 2x" alt="PyG"/>
+            
+          
+          <div class="space20"></div>
+          <p>PyG is the ultimate library for Graph Neural Networks, built upon PyTorch.</p>
+          
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="space30 d-lg-none d-xl-none"></div>
+      <div class="col-1 col-md-1 col-lg-1 offset-lg-1">
+        
+        <div class="widget">
+          
+          <ul class="list-unstyled mb-0">
+            
+          </ul>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="6 col-md-3 col-lg-2">
+        
+        <div class="widget">
+          
+           <h5 class="widget-title">Links</h5>
+          
+          <ul class="list-unstyled mb-0">
+            
+            <li><a href="/news/index">News</a></li>
+            
+            <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/">Docs</a></li>
+            
+            <li><a href="https://github.com/pyg-team/pytorch_geometric/discussions">Discussions</a></li>
+            
+            <li><a href="https://github.com/pyg-team/pytorch_geometric">GitHub</a></li>
+            
+            <li><a href="https://torchgeometricco.slack.com/ssb/redirect">Join Slack</a></li>
+            
+          </ul>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="col-1 col-md-1 col-lg-1">
+        
+        <div class="widget">
+          
+          <ul class="list-unstyled mb-0">
+            
+          </ul>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="widget">
+          <h5 class="widget-title">Contact</h5>
+          
+          <a href="mailto:team@pyg.org">team@pyg.org</a><br />
+          <a href="mailto:"></a><br />
+           
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+  <div class="container inner pt-0 pb-40 d-flex align-items-center">
+    <p class="mb-0 mr-auto"></p>
+    <ul class="social social-mute social-s ml-auto">
+      
+    </ul>
+  </div>
+</footer>
+</div>
+
+  </div>
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+  <script src="/assets/js/plugins.js"></script>
+  <script src="/assets/js/simple-jekyll-search.min.js"></script>
+  <script src="/assets/js/scripts.js"></script>
+</body>
+</html>

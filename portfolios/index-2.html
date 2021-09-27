@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="/assets/images/favicon.ico"/>
+  <title> Grid Portfolio with Details </title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/plugins.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/settings.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/layers.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/navigation.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/type/type.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/color/leaf.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,500,600,700,800&display=swap" rel="stylesheet"/>
+  
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-83R1969V5C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-83R1969V5C');
+</script>
+  
+</head>
+<body >
+  <div class="content-wrapper">
+    
+
+<nav class="navbar  transparent  navbar-hover-opacity navbar-expand-lg">
+  <div class=" container  flex-row justify-content-center">
+    <div class="navbar-brand">
+      <a href="http://pyg.org">
+        
+         <img src="/assets/images/logo_pyg.png" srcset="/assets/images/logo_pyg.png 1x, /assets/images/logo_pyg@2x.png 2x" class=" logo  " alt="PyG"/>
+      </a>
+    </div>
+    <div class="navbar-other ml-auto order-lg-3">
+      <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
+        <li class="nav-item">
+          <div class="navbar-hamburger d-lg-none d-xl-none ml-auto">
+            <button class="hamburger animate plain" data-toggle="offcanvas-nav"><span></span></button>
+          </div>
+        </li>
+        <li class="dropdown search-dropdown position-static nav-item">
+          <a href="#" role="button" class="collapse-toggle" data-toggle="collapse" data-target=".search-dropdown-menu" aria-haspopup="true" aria-expanded="false"><i class="jam jam-search"></i></a>
+          <div class="dropdown-menu search-dropdown-menu w-100 collapse">
+            <div class="form-wrapper">
+              <form class="inverse-text">
+                <input type="text" id="search-input" class="form-control" placeholder="Search blog posts.."/>
+                <i class="dropdown-close jam jam-close"></i>
+              </form>
+              <!-- /.search-form -->
+            </div>
+            <!-- /.form-wrapper -->
+           <ul id="results-container" class="position-static"></ul>
+          </div>
+        </li>
+        <li class="nav-item"><button class="plain" data-toggle="offcanvas-info"><i class="jam jam-info"></i></button></li>
+      </ul>
+      <!-- /.navbar-nav -->
+    </div>
+    <!-- /.navbar-other -->
+    <div class="navbar-collapse offcanvas-nav">
+      <div class="offcanvas-header d-lg-none d-xl-none">
+        <a href="http://pyg.org">
+          <img src="/assets/images/logo_pyg.png" srcset="/assets/images/logo_pyg.png 1x, /assets/images/logo_pyg@2x.png 2x" alt="PyG"/></a>
+        <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>
+      </div>
+      <ul class="navbar-nav mx-auto">
+      	
+      	
+      	
+          <a class="nav-link" href="/news/index">News</a>
+        
+      	
+      	
+      	
+          <a class="nav-link" href="https://pytorch-geometric.readthedocs.io/en/latest/">Docs</a>
+        
+      	
+      	
+      	
+          <a class="nav-link" href="https://github.com/pyg-team/pytorch_geometric/discussions">Discussions</a>
+        
+      	
+      	
+      	
+          <a class="nav-link" href="https://github.com/pyg-team/pytorch_geometric">GitHub</a>
+        
+      	
+      	
+      	
+          <a class="nav-link" href="https://join.slack.com/t/torchgeometricco/shared_invite/zt-p6br3yuo-BxRoe36OHHLF6jYU8xHtBA">Join Slack</a>
+        
+      	
+      </ul>
+      <!-- /.navbar-nav -->
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<!-- /.navbar -->
+<div class="offcanvas-info inverse-text">
+  <button class="plain offcanvas-close offcanvas-info-close"><i class="jam jam-close"></i></button>
+  <a href="http://pyg.org">
+  	<img src="/assets/images/logo_pyg.png" srcset="/assets/images/logo_pyg.png 1x, /assets/images/logo_pyg@2x.png 2x" class=" logo " alt="PyG"/>
+  </a>
+  <div class="space30"></div>
+  <p>PyG is the ultimate library for Graph Neural Networks, built upon PyTorch.</p>
+  <div class="space20"></div>
+  <div class="widget">
+    <h5 class="widget-title">Contact Info</h5>
+      <a href="mailto:team@pyg.org" class="nocolor">team@pyg.org</a>
+  </div>
+  <!-- /.widget -->
+  <div class="widget">
+    
+     <h3 class="widget-title">Links</h3>
+    
+    <ul class="list-unstyled">
+     
+      <li><a href="/news/index" class="nocolor">News</a></li>
+     
+      <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/" class="nocolor">Docs</a></li>
+     
+      <li><a href="https://github.com/pyg-team/pytorch_geometric/discussions" class="nocolor">Discussions</a></li>
+     
+      <li><a href="https://github.com/pyg-team/pytorch_geometric" class="nocolor">GitHub</a></li>
+     
+      <li><a href="https://torchgeometricco.slack.com/ssb/redirect" class="nocolor">Join Slack</a></li>
+     
+    </ul>
+  </div>
+  <!-- /.widget -->
+  <div class="widget">
+    
+    <ul class="social social-mute social-s ml-auto">
+      
+    </ul>
+  </div>
+  <!-- /.widget -->
+</div>
+<!-- /.offcanvas-info -->
+
+
+
+
+<div class="wrapper light-wrapper page-title-wrapper">
+  <div class="container inner text-center">
+    
+     <h1 class="page-title">Grid Portfolio with Details</h1>
+    
+    
+     <p class="lead">Aenean lacinia bibendum nulla sed consectetur</p>
+    
+  </div>
+</div>
+
+
+
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="grid grid-view boxed">
+      <div class="isotope-filter text-center">
+        <ul>
+          <li><a class="button active" data-filter="*">All</a></li>
+          
+           <li><a class="button" data-filter=".branding">Branding</a></li>
+          
+           <li><a class="button" data-filter=".corporate">Corporate</a></li>
+          
+           <li><a class="button" data-filter=".application">Application</a></li>
+          
+           <li><a class="button" data-filter=".video">Video</a></li>
+          
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+      <div class="tiles text-center light-gallery-wrapper">
+        <div class="row isotope">
+          
+          <div class="item grid-sizer col-md-6 col-lg-4  corporate  branding ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/art/p1-full.jpg" class="lightbox"> 
+              	  <img src="/assets/images/art/p1.jpg" alt="Fringilla Nullam"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Fringilla Nullam</a></h2>
+                <div class="meta mb-0">Corporate, Application</div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4  application ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/art/p2-full.jpg" class="lightbox"> 
+              	  <img src="/assets/images/art/p2.jpg" alt="Ridiculus Parturient"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Ridiculus Parturient</a></h2>
+                <div class="meta mb-0">Application</div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4  video ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/art/p3-full.jpg" class="lightbox"> 
+              	  <img src="/assets/images/art/p3.jpg" alt="Nullam Mollis"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Nullam Mollis</a></h2>
+                <div class="meta mb-0">Application</div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4  branding ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/art/p4-full.jpg" class="lightbox"> 
+              	  <img src="/assets/images/art/p4.jpg" alt="Ridiculus Parturient"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Ridiculus Parturient</a></h2>
+                <div class="meta mb-0">Application</div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4  application  branding ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/art/p5-full.jpg" class="lightbox"> 
+              	  <img src="/assets/images/art/p5.jpg" alt="Ridiculus Tristique"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Ridiculus Tristique</a></h2>
+                <div class="meta mb-0">Application</div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4  corporate ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/art/p6-full.jpg" class="lightbox"> 
+              	  <img src="/assets/images/art/p6.jpg" alt="Euismod Risus"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Euismod Risus</a></h2>
+                <div class="meta mb-0">Application</div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4  branding ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/art/p7-full.jpg" class="lightbox"> 
+              	  <img src="/assets/images/art/p7.jpg" alt="Sollicitudin Pharetra"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Sollicitudin Pharetra</a></h2>
+                <div class="meta mb-0">Audio, Video</div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4  video ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/art/p8-full.jpg" class="lightbox"> 
+              	  <img src="/assets/images/art/p8.jpg" alt="Consectetur Malesuada"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Consectetur Malesuada</a></h2>
+                <div class="meta mb-0">Branding</div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4  corporate  branding ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/art/p9-full.jpg" class="lightbox"> 
+              	  <img src="/assets/images/art/p9.jpg" alt="Ridiculus Parturient"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Ridiculus Parturient</a></h2>
+                <div class="meta mb-0">Application</div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4  branding ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/art/p10-full.jpg" class="lightbox"> 
+              	  <img src="/assets/images/art/p10.jpg" alt="Ridiculus Parturient"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Ridiculus Parturient</a></h2>
+                <div class="meta mb-0">Application</div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4  branding ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/art/p11-full.jpg" class="lightbox"> 
+              	  <img src="/assets/images/art/p11.jpg" alt="Ultricies Aenean"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Ultricies Aenean</a></h2>
+                <div class="meta mb-0">Corporate</div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4  branding ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/art/p12-full.jpg" class="lightbox"> 
+              	  <img src="/assets/images/art/p12.jpg" alt="Pellentesque Commodo"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Pellentesque Commodo</a></h2>
+                <div class="meta mb-0">Branding</div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.tiles -->
+    </div>
+    <!-- /.grid -->
+  </div>
+</div>
+
+
+<footer class=" dark-wrapper inverse-text ">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-md-12 col-lg-3 text-center text-lg-left">
+        <div class="widget"> 
+          
+            <img src="/assets/images/logo_pyg.png" srcset="/assets/images/logo_pyg.png 1x, /assets/images/logo_pyg@2x.png 2x" alt="PyG"/>
+            
+          
+          <div class="space20"></div>
+          <p>PyG is the ultimate library for Graph Neural Networks, built upon PyTorch.</p>
+          
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="space30 d-lg-none d-xl-none"></div>
+      <div class="col-1 col-md-1 col-lg-1 offset-lg-1">
+        
+        <div class="widget">
+          
+          <ul class="list-unstyled mb-0">
+            
+          </ul>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="6 col-md-3 col-lg-2">
+        
+        <div class="widget">
+          
+           <h5 class="widget-title">Links</h5>
+          
+          <ul class="list-unstyled mb-0">
+            
+            <li><a href="/news/index">News</a></li>
+            
+            <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/">Docs</a></li>
+            
+            <li><a href="https://github.com/pyg-team/pytorch_geometric/discussions">Discussions</a></li>
+            
+            <li><a href="https://github.com/pyg-team/pytorch_geometric">GitHub</a></li>
+            
+            <li><a href="https://torchgeometricco.slack.com/ssb/redirect">Join Slack</a></li>
+            
+          </ul>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="col-1 col-md-1 col-lg-1">
+        
+        <div class="widget">
+          
+          <ul class="list-unstyled mb-0">
+            
+          </ul>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="widget">
+          <h5 class="widget-title">Contact</h5>
+          
+          <a href="mailto:team@pyg.org">team@pyg.org</a><br />
+          <a href="mailto:"></a><br />
+           
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+  <div class="container inner pt-0 pb-40 d-flex align-items-center">
+    <p class="mb-0 mr-auto"></p>
+    <ul class="social social-mute social-s ml-auto">
+      
+    </ul>
+  </div>
+</footer>
+  </div>
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+  <script src="/assets/js/plugins.js"></script>
+  <script src="/assets/js/simple-jekyll-search.min.js"></script>
+  <script src="/assets/js/scripts.js"></script>
+</body>
+</html>

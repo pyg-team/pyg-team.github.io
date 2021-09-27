@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="/assets/images/favicon.ico"/>
+  <title> PyG</title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/plugins.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/settings.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/layers.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/navigation.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/type/type.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/color/leaf.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,500,600,700,800&display=swap" rel="stylesheet"/>
+  
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-83R1969V5C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-83R1969V5C');
+</script>
+  
+</head>
+<body >
+  <div class="content-wrapper">
+    <nav class="navbar  absolute transparent inverse-text nav-uppercase  navbar-hover-opacity navbar-expand-lg">
+  <div class=" container  flex-row justify-content-center">
+    <div class="navbar-brand">
+      <a href="http://pyg.org">
+        
+         <img src="/assets/images/logo_pyg.png" srcset="/assets/images/logo_pyg.png 1x, /assets/images/logo_pyg@2x.png 2x" class=" logo-light " alt="PyG"/>
+         
+         <img src="/assets/images/logo_pyg.png" srcset="/assets/images/logo_pyg.png 1x, /assets/images/logo_pyg@2x.png 2x" class=" logo-dark  " alt="PyG"/>
+      </a>
+    </div>
+    <div class="navbar-other ml-auto order-lg-3">
+      <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
+        <li class="nav-item">
+          <div class="navbar-hamburger d-lg-none d-xl-none ml-auto">
+            <button class="hamburger animate plain" data-toggle="offcanvas-nav"><span></span></button>
+          </div>
+        </li>
+        <li class="dropdown search-dropdown position-static nav-item">
+          <a href="#" role="button" class="collapse-toggle" data-toggle="collapse" data-target=".search-dropdown-menu" aria-haspopup="true" aria-expanded="false"><i class="jam jam-search"></i></a>
+          <div class="dropdown-menu search-dropdown-menu w-100 collapse">
+            <div class="form-wrapper">
+              <form class="inverse-text">
+                <input type="text" id="search-input" class="form-control" placeholder="Search blog posts.."/>
+                <i class="dropdown-close jam jam-close"></i>
+              </form>
+              <!-- /.search-form -->
+            </div>
+            <!-- /.form-wrapper -->
+           <ul id="results-container" class="position-static"></ul>
+          </div>
+        </li>
+        <li class="nav-item"><button class="plain" data-toggle="offcanvas-info"><i class="jam jam-info"></i></button></li>
+      </ul>
+      <!-- /.navbar-nav -->
+    </div>
+    <!-- /.navbar-other -->
+    <div class="navbar-collapse offcanvas-nav">
+      <div class="offcanvas-header d-lg-none d-xl-none">
+        <a href="http://pyg.org">
+          <img src="/assets/images/logo_pyg.png" srcset="/assets/images/logo_pyg.png 1x, /assets/images/logo_pyg@2x.png 2x" alt="PyG"/></a>
+        <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>
+      </div>
+      <ul class="navbar-nav mx-auto">
+      	
+      	
+      	
+          <a class="nav-link" href="/news/index">News</a>
+        
+      	
+      	
+      	
+          <a class="nav-link" href="https://pytorch-geometric.readthedocs.io/en/latest/">Docs</a>
+        
+      	
+      	
+      	
+          <a class="nav-link" href="https://github.com/pyg-team/pytorch_geometric/discussions">Discussions</a>
+        
+      	
+      	
+      	
+          <a class="nav-link" href="https://github.com/pyg-team/pytorch_geometric">GitHub</a>
+        
+      	
+      	
+      	
+          <a class="nav-link" href="https://join.slack.com/t/torchgeometricco/shared_invite/zt-p6br3yuo-BxRoe36OHHLF6jYU8xHtBA">Join Slack</a>
+        
+      	
+      </ul>
+      <!-- /.navbar-nav -->
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<!-- /.navbar -->
+<div class="offcanvas-info inverse-text">
+  <button class="plain offcanvas-close offcanvas-info-close"><i class="jam jam-close"></i></button>
+  <a href="http://pyg.org">
+  	<img src="/assets/images/logo_pyg.png" srcset="/assets/images/logo_pyg.png 1x, /assets/images/logo_pyg@2x.png 2x" class=" logo-light " alt="PyG"/>
+  </a>
+  <div class="space30"></div>
+  <p>PyG is the ultimate library for Graph Neural Networks, built upon PyTorch.</p>
+  <div class="space20"></div>
+  <div class="widget">
+    <h5 class="widget-title">Contact Info</h5>
+      <a href="mailto:team@pyg.org" class="nocolor">team@pyg.org</a>
+  </div>
+  <!-- /.widget -->
+  <div class="widget">
+    
+     <h3 class="widget-title">Links</h3>
+    
+    <ul class="list-unstyled">
+     
+      <li><a href="/news/index" class="nocolor">News</a></li>
+     
+      <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/" class="nocolor">Docs</a></li>
+     
+      <li><a href="https://github.com/pyg-team/pytorch_geometric/discussions" class="nocolor">Discussions</a></li>
+     
+      <li><a href="https://github.com/pyg-team/pytorch_geometric" class="nocolor">GitHub</a></li>
+     
+      <li><a href="https://torchgeometricco.slack.com/ssb/redirect" class="nocolor">Join Slack</a></li>
+     
+    </ul>
+  </div>
+  <!-- /.widget -->
+  <div class="widget">
+    
+    <ul class="social social-mute social-s ml-auto">
+      
+    </ul>
+  </div>
+  <!-- /.widget -->
+</div>
+<!-- /.offcanvas-info -->
+
+<div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text" data-image-src="/assets/images/art/bg1.jpg">
+  <div class="container inner text-center">
+    <div class="space90"></div>
+    
+     <h1 class="page-title">Process Steps</h1>
+    
+    
+     <p class="lead">Aenean lacinia bibendum nulla sed consectetur</p>
+     
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <h2 class="section-title mb-40 text-center">Circular Process Steps</h2>
+    <div class="row">
+      <div class="col-md-10 offset-md-1 col-lg-12 offset-lg-0">
+        <div class="row">
+          <div class="col-lg-6">
+            <div id="dial1">
+              <ul class="dial">
+                <li>
+                  <div class="dial-item active" data-cyrcleBox="cf1-1"><span class="icon icon-blob icon-blob-blue color-blue"><i class="icofont-chart-arrows-axis"></i><span class="step bg-blue">1</span></span></div>
+                  <div class="dial-item-info" id="cf1-1">
+                    <div class="dial-item-info-inner">
+                      <h4>1. Analysis</h4>
+                      <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus magnis parturient.</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dial-item" data-cyrcleBox="cf1-2"><span class="icon icon-blob icon-blob-green color-green mb-20"><i class="icofont-cubes"></i><span class="step bg-green">2</span></span></div>
+                  <div class="dial-item-info" id="cf1-2">
+                    <div class="dial-item-info-inner">
+                      <h4>2. Concept</h4>
+                      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis.</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dial-item" data-cyrcleBox="cf1-3"><span class="icon icon-blob icon-blob-pink color-pink mb-20"><i class="icofont-pen-holder"></i><span class="step bg-pink">3</span></span></div>
+                  <div class="dial-item-info" id="cf1-3">
+                    <div class="dial-item-info-inner">
+                      <h4>3. Prepare</h4>
+                      <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus.</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dial-item" data-cyrcleBox="cf1-4"><span class="icon icon-blob icon-blob-purple color-purple mb-20"><i class="icofont-brush"></i><span class="step bg-purple">4</span></span> </div>
+                  <div class="dial-item-info" id="cf1-4">
+                    <div class="dial-item-info-inner">
+                      <h4>4. Retouch</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dial-item" data-cyrcleBox="cf1-5"><span class="icon icon-blob icon-blob-yellow color-yellow mb-20"><i class="icofont-ui-clip-board"></i><span class="step bg-yellow">5</span></span> </div>
+                  <div class="dial-item-info" id="cf1-5">
+                    <div class="dial-item-info-inner">
+                      <h4>5. Finalize</h4>
+                      <p>Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida.</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dial-item" data-cyrcleBox="cf1-6"><span class="icon icon-blob icon-blob-orange color-orange mb-20"><i class="icofont-box"></i><span class="step bg-orange">6</span></span></div>
+                  <div class="dial-item-info" id="cf1-6">
+                    <div class="dial-item-info-inner">
+                      <h4>6. Package</h4>
+                      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--/column -->
+          <div class="col-lg-6">
+            <div id="dial2">
+              <ul class="dial">
+                <li>
+                  <div class="dial-item active" data-cyrcleBox="cf2-1"><span class="icon icon-blob icon-blob-blue color-blue"><span class="number color-blue">01</span></span></div>
+                  <div class="dial-item-info" id="cf2-1">
+                    <div class="dial-item-info-inner">
+                      <h4>1. Analysis</h4>
+                      <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus magnis parturient.</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dial-item" data-cyrcleBox="cf2-2"><span class="icon icon-blob icon-blob-green color-green mb-20"><span class="number color-green">02</span></span></div>
+                  <div class="dial-item-info" id="cf2-2">
+                    <div class="dial-item-info-inner">
+                      <h4>2. Concept</h4>
+                      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis.</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dial-item" data-cyrcleBox="cf2-3"><span class="icon icon-blob icon-blob-pink color-pink mb-20"><span class="number color-pink">03</span></span></div>
+                  <div class="dial-item-info" id="cf2-3">
+                    <div class="dial-item-info-inner">
+                      <h4>3. Prepare</h4>
+                      <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus.</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dial-item" data-cyrcleBox="cf2-4"><span class="icon icon-blob icon-blob-purple color-purple mb-20"><span class="number color-purple">04</span></span> </div>
+                  <div class="dial-item-info" id="cf2-4">
+                    <div class="dial-item-info-inner">
+                      <h4>4. Retouch</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dial-item" data-cyrcleBox="cf2-5"><span class="icon icon-blob icon-blob-yellow color-yellow mb-20"><span class="number color-yellow">05</span></span> </div>
+                  <div class="dial-item-info" id="cf2-5">
+                    <div class="dial-item-info-inner">
+                      <h4>5. Finalize</h4>
+                      <p>Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida.</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dial-item" data-cyrcleBox="cf2-6"><span class="icon icon-blob icon-blob-orange color-orange mb-20"><span class="number color-orange">06</span></span></div>
+                  <div class="dial-item-info" id="cf2-6">
+                    <div class="dial-item-info-inner">
+                      <h4>6. Package</h4>
+                      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+<div class="wrapper gray-wrapper">
+  <div class="container inner">
+    <h2 class="section-title mb-40 text-center">Process Steps with Line</h2>
+    <div class="row gutter-50 gutter-md-30 process-wrapper line text-center">
+      <div class="col-md-3"> <span class="icon icon-blob icon-blob-pink mb-30"><span class="number color-pink">01</span></span>
+        <h5>Concept</h5>
+        <p>Nulla vitae elit libero elit non porta gravida eget metus cras.</p>
+      </div>
+      <!--/column -->
+      <div class="col-md-3"> <span class="icon icon-blob icon-blob-blue mb-30"><span class="number color-blue">02</span></span>
+        <h5>Prepare</h5>
+        <p>Nulla vitae elit libero elit non porta gravida eget metus cras.</p>
+      </div>
+      <!--/column -->
+      <div class="col-md-3"> <span class="icon icon-blob icon-blob-green mb-30"><span class="number color-green">03</span></span>
+        <h5>Retouch</h5>
+        <p>Nulla vitae elit libero elit non porta gravida eget metus cras.</p>
+      </div>
+      <!--/column -->
+      <div class="col-md-3"> <span class="icon icon-blob icon-blob-purple mb-30"><span class="number color-purple">04</span></span>
+        <h5>Finalize</h5>
+        <p>Nulla vitae elit libero elit non porta gravida eget metus cras.</p>
+      </div>
+      <!--/column -->
+    </div>
+    <!--/.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <h2 class="section-title mb-40 text-center">Process Steps with Arrow</h2>
+    <div class="row gutter-60 gutter-md-30 process-wrapper arrow text-center">
+      <div class="col-md-4"><span class="icon icon-blob icon-blob-blue color-blue mb-30"><i class="icofont-cubes"></i><span class="step bg-blue">1</span></span>
+        <h5>Collect Ideas</h5>
+        <p>Nulla vitae elit libero elit non porta gravida eget metus cras. Aenean eu leo quam vestibulum.</p>
+      </div>
+      <!--/column -->
+      <div class="col-md-4"><span class="icon icon-blob icon-blob-green color-green mb-30"><i class="icofont-chart-arrows-axis"></i><span class="step bg-green">2</span></span>
+        <h5>Data Analysis</h5>
+        <p>Nulla vitae elit libero elit non porta gravida eget metus cras. Aenean eu leo quam vestibulum.</p>
+      </div>
+      <!--/column -->
+      <div class="col-md-4"><span class="icon icon-blob icon-blob-pink color-pink mb-30"><i class="icofont-brush"></i><span class="step bg-pink">3</span></span>
+        <h5>Magic Touch</h5>
+        <p>Nulla vitae elit libero elit non porta gravida eget metus cras. Aenean eu leo quam vestibulum.</p>
+      </div>
+      <!--/column -->
+    </div>
+    <!--/.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+<div class="wrapper gray-wrapper">
+  <div class="container inner">
+    <h2 class="section-title mb-40 text-center">Process Steps with Circle Background</h2>
+    <div class="row gutter-50">
+      <div class="col-md-6 col-lg-4">
+        <div class="d-flex flex-row justify-content-center">
+          <div>
+            <div class="icon icon-bg icon-bg-rose color-rose mr-25"><span class="number">1</span></div>
+          </div>
+          <div>
+            <h5>Analysis</h5>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+          </div>
+        </div>
+      </div>
+      <!--/column -->
+      <div class="col-md-6 col-lg-4">
+        <div class="d-flex flex-row justify-content-center">
+          <div>
+            <div class="icon icon-bg icon-bg-blue color-blue mr-25"><span class="number">2</span></div>
+          </div>
+          <div>
+            <h5>Concept</h5>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+          </div>
+        </div>
+      </div>
+      <!--/column -->
+      <div class="space20 d-none d-md-block d-lg-none"></div>
+      <div class="col-md-6 col-lg-4">
+        <div class="d-flex flex-row justify-content-center">
+          <div>
+            <div class="icon icon-bg icon-bg-green color-green mr-25"><span class="number">3</span></div>
+          </div>
+          <div>
+            <h5>Prepare</h5>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+          </div>
+        </div>
+      </div>
+      <!--/column -->
+      <div class="space20 d-none d-lg-block"></div>
+      <div class="col-md-6 col-lg-4">
+        <div class="d-flex flex-row justify-content-center">
+          <div>
+            <div class="icon icon-bg icon-bg-purple color-purple mr-25"><span class="number">4</span></div>
+          </div>
+          <div>
+            <h5>Retouch</h5>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+          </div>
+        </div>
+      </div>
+      <!--/column -->
+      <div class="space20 d-none d-md-block d-lg-none"></div>
+      <div class="col-md-6 col-lg-4">
+        <div class="d-flex flex-row justify-content-center">
+          <div>
+            <div class="icon icon-bg icon-bg-orange color-orange mr-25"><span class="number">5</span></div>
+          </div>
+          <div>
+            <h5>Finalize</h5>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+          </div>
+        </div>
+      </div>
+      <!--/column -->
+      <div class="col-md-6 col-lg-4">
+        <div class="d-flex flex-row justify-content-center">
+          <div>
+            <div class="icon icon-bg icon-bg-violet color-violet mr-25"><span class="number">6</span></div>
+          </div>
+          <div>
+            <h5>Package</h5>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.</p>
+          </div>
+        </div>
+      </div>
+      <!--/column -->
+    </div>
+    <!--/.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+<footer class=" dark-wrapper inverse-text ">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-md-4 col-lg-3">
+        <div class="widget">
+         <a href="">
+          
+            <img src="/assets/images/logo_pyg.png" srcset="/assets/images/logo_pyg.png 1x, /assets/images/logo_pyg@2x.png 2x" alt="PyG"/>
+            
+         </a>
+          <div class="space40"></div>
+          <p>© 2021 PyG.  All rights reserved.</p>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="col-md-4 col-lg-3">
+        <div class="widget">
+          <h3 class="widget-title">Get in Touch</h3>
+          
+           <a href="mailto:team@pyg.org">team@pyg.org</a><br />
+          
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="col-md-4 col-lg-3">
+        
+        <div class="widget">
+          
+           <h5 class="widget-title">Links</h5>
+          
+          <ul class="list-unstyled mb-0">
+            
+            <li><a href="">News</a></li>
+            
+            <li><a href="">Docs</a></li>
+            
+            <li><a href="">Discussions</a></li>
+            
+            <li><a href="">GitHub</a></li>
+            
+            <li><a href="">Join Slack</a></li>
+            
+          </ul>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="space30 d-none d-md-block d-lg-none"></div>
+      <div class="col-md-12 col-lg-3">
+        <div class="widget">
+          
+           <h3 class="widget-title">Our Newsletter</h3>
+          
+          
+           <p>Subscribe to our newsletter to get our news & deals delivered to your inbox!</p>
+          
+          <div class="space10"></div>
+          <div class="newsletter-wrapper">
+            <form action="https://formsubmit.io/send/team@pyg.org" target="_blank">
+              <div id="mc_embed_signup_scroll" class="input-group">
+                <input type="email"  name="user_email" class="email form-control mb-0 mr-2 mb-sm-0"  placeholder="Email Address" required>
+                <button type="submit" class="btn btn-rounded btn-default mr-0 mb-0 pull-right">
+                Join
+               </button>
+              </div>
+            </form>
+          </div>
+          <!-- /.newsletter-wrapper -->
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!--/.row -->
+  </div>
+  <!-- /.container -->
+</footer>
+  </div>
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+  <script src="/assets/js/plugins.js"></script>
+  <script src="/assets/js/simple-jekyll-search.min.js"></script>
+  <script src="/assets/js/scripts.js"></script>
+</body>
+</html>

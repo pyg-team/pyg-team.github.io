@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="/assets/images/favicon.ico"/>
+  <title> PyG 2.0 Released </title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/plugins.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/settings.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/layers.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/navigation.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/type/type.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/color/leaf.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,500,600,700,800&display=swap" rel="stylesheet"/>
+  
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-83R1969V5C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-83R1969V5C');
+</script>
+  
+</head>
+<body >
+  <div class="content-wrapper">
+    <nav class="navbar  navbar-hover-opacity navbar-expand-lg">
+  <div class=" container-fluid  flex-row justify-content-center">
+    <div class="navbar-brand">
+      <a href="http://pyg.org">
+        
+         <img src="/assets/images/logo_pyg.png" srcset="/assets/images/logo_pyg.png 1x, /assets/images/logo_pyg@2x.png 2x" class=" logo  " alt="PyG"/>
+      </a>
+    </div>
+    <div class="navbar-other ml-auto order-lg-3">
+      <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
+        <li class="nav-item">
+          <div class="navbar-hamburger d-lg-none d-xl-none ml-auto">
+            <button class="hamburger animate plain" data-toggle="offcanvas-nav"><span></span></button>
+          </div>
+        </li>
+        <li class="dropdown search-dropdown position-static nav-item">
+          <a href="#" role="button" class="collapse-toggle" data-toggle="collapse" data-target=".search-dropdown-menu" aria-haspopup="true" aria-expanded="false"><i class="jam jam-search"></i></a>
+          <div class="dropdown-menu search-dropdown-menu w-100 collapse">
+            <div class="form-wrapper">
+              <form class="inverse-text">
+                <input type="text" id="search-input" class="form-control" placeholder="Search blog posts.."/>
+                <i class="dropdown-close jam jam-close"></i>
+              </form>
+              <!-- /.search-form -->
+            </div>
+            <!-- /.form-wrapper -->
+           <ul id="results-container" class="position-static"></ul>
+          </div>
+        </li>
+        <li class="nav-item"><button class="plain" data-toggle="offcanvas-info"><i class="jam jam-info"></i></button></li>
+      </ul>
+      <!-- /.navbar-nav -->
+    </div>
+    <!-- /.navbar-other -->
+    <div class="navbar-collapse offcanvas-nav">
+      <div class="offcanvas-header d-lg-none d-xl-none">
+        <a href="http://pyg.org">
+          <img src="/assets/images/logo_pyg.png" srcset="/assets/images/logo_pyg.png 1x, /assets/images/logo_pyg@2x.png 2x" alt="PyG"/></a>
+        <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>
+      </div>
+      <ul class="navbar-nav mx-auto">
+      	
+      	
+      	
+          <a class="nav-link" href="/news/index">News</a>
+        
+      	
+      	
+      	
+          <a class="nav-link" href="https://pytorch-geometric.readthedocs.io/en/latest/">Docs</a>
+        
+      	
+      	
+      	
+          <a class="nav-link" href="https://github.com/pyg-team/pytorch_geometric/discussions">Discussions</a>
+        
+      	
+      	
+      	
+          <a class="nav-link" href="https://github.com/pyg-team/pytorch_geometric">GitHub</a>
+        
+      	
+      	
+      	
+          <a class="nav-link" href="https://join.slack.com/t/torchgeometricco/shared_invite/zt-p6br3yuo-BxRoe36OHHLF6jYU8xHtBA">Join Slack</a>
+        
+      	
+      </ul>
+      <!-- /.navbar-nav -->
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<!-- /.navbar -->
+<div class="offcanvas-info inverse-text">
+  <button class="plain offcanvas-close offcanvas-info-close"><i class="jam jam-close"></i></button>
+  <a href="http://pyg.org">
+  	<img src="/assets/images/logo_pyg.png" srcset="/assets/images/logo_pyg.png 1x, /assets/images/logo_pyg@2x.png 2x" class=" logo " alt="PyG"/>
+  </a>
+  <div class="space30"></div>
+  <p>PyG is the ultimate library for Graph Neural Networks, built upon PyTorch.</p>
+  <div class="space20"></div>
+  <div class="widget">
+    <h5 class="widget-title">Contact Info</h5>
+      <a href="mailto:team@pyg.org" class="nocolor">team@pyg.org</a>
+  </div>
+  <!-- /.widget -->
+  <div class="widget">
+    
+     <h3 class="widget-title">Links</h3>
+    
+    <ul class="list-unstyled">
+     
+      <li><a href="/news/index" class="nocolor">News</a></li>
+     
+      <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/" class="nocolor">Docs</a></li>
+     
+      <li><a href="https://github.com/pyg-team/pytorch_geometric/discussions" class="nocolor">Discussions</a></li>
+     
+      <li><a href="https://github.com/pyg-team/pytorch_geometric" class="nocolor">GitHub</a></li>
+     
+      <li><a href="https://torchgeometricco.slack.com/ssb/redirect" class="nocolor">Join Slack</a></li>
+     
+    </ul>
+  </div>
+  <!-- /.widget -->
+  <div class="widget">
+    
+    <ul class="social social-mute social-s ml-auto">
+      
+    </ul>
+  </div>
+  <!-- /.widget -->
+</div>
+<!-- /.offcanvas-info -->
+<div class="wrapper light-wrapper">
+  <div class="container inner pt-80">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="blog classic-view">
+          <div class="post mb-0">
+            
+            <figure class="rounded text-center">
+              <img src="/assets/images/posts/logo_pyg@2x.png" alt="PyG 2.0 Released"/>
+            </figure>
+            
+            <div class="space40"></div>
+            <div class="post-content">
+              
+              <div class="category text-center">
+                <a href="/category/" class="badge badge-pill bg-hibiscus"></a>
+              </div>
+              
+              <h2 class="post-title text-center">PyG 2.0 Released</h2>
+              <div class="meta text-center">
+                
+                 <span class="date"><i class="jam jam-clock"></i>12 Sep 2021</span>
+                
+                
+              </div>
+               <p><strong>PyG</strong> <em>(PyTorch Geometric)</em> has been moved from the personal account <a href="https://github.com/rusty1s"><code class="language-plaintext highlighter-rouge">rusty1s</code></a> to its own organization account <a href="https://github.com/pyg-team"><code class="language-plaintext highlighter-rouge">pyg-team</code></a> to emphasize the ongoing collaboration between TU Dortmund University, Stanford University and many great external contributors.
+With this, we are releasing <strong>PyG 2.0</strong>, a new major release that brings sophisticated <a href="#heterogeneous-graph-support"><strong>heterogeneous graph support</strong></a>, <a href="#managing-experiments-with-graphgym"><strong>GraphGym</strong></a> and <a href="#additional-features"><strong>many other exciting features</strong></a> to PyG.</p>
+
+<h2 id="heterogeneous-graph-support">Heterogeneous Graph Support</h2>
+
+<p>We finally provide full <strong>heterogeneous graph support</strong> in PyG 2.0.
+See <a href="https://pytorch-geometric.readthedocs.io/en/latest/notes/heterogeneous.html">here</a> for the accompanying tutorial.</p>
+
+<h3 id="highlights">Highlights</h3>
+
+<ul>
+  <li><strong>Heterogeneous Graph Storage:</strong> Heterogeneous graphs can now be stored in their own dedicated <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/data.html#torch_geometric.data.HeteroData"><strong><code class="language-plaintext highlighter-rouge">data.HeteroData</code></strong></a> class (thanks to @<a href="https://github.com/yaoyaowd">yaoyaowd</a>):
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">torch_geometric.data</span> <span class="kn">import</span> <span class="n">HeteroData</span>
+  
+<span class="n">data</span> <span class="o">=</span> <span class="n">HeteroData</span><span class="p">()</span>
+
+<span class="c1"># Create two node types "paper" and "author" holding a single feature matrix:
+</span><span class="n">data</span><span class="p">[</span><span class="s">'paper'</span><span class="p">].</span><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">randn</span><span class="p">(</span><span class="n">num_papers</span><span class="p">,</span> <span class="n">num_paper_features</span><span class="p">)</span>
+<span class="n">data</span><span class="p">[</span><span class="s">'author'</span><span class="p">].</span><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">randn</span><span class="p">(</span><span class="n">num_authors</span><span class="p">,</span> <span class="n">num_authors_features</span><span class="p">)</span>
+
+<span class="c1"># Create an edge type ("paper", "written_by", "author") holding its graph connectivity:
+</span><span class="n">data</span><span class="p">[</span><span class="s">'paper'</span><span class="p">,</span> <span class="s">'written_by'</span><span class="p">,</span> <span class="s">'author'</span><span class="p">].</span><span class="n">edge_index</span> <span class="o">=</span> <span class="p">...</span>  <span class="c1"># [2, num_edges]
+</span></code></pre></div>    </div>
+
+    <p><a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/data.html#torch_geometric.data.HeteroData"><code class="language-plaintext highlighter-rouge">data.HeteroData</code></a> behaves similar to a regular homgeneous <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/data.html#torch_geometric.data.Data"><code class="language-plaintext highlighter-rouge">data.Data</code></a> object:</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s">'paper'</span><span class="p">].</span><span class="n">num_nodes</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s">'paper'</span><span class="p">,</span> <span class="s">'written_by'</span><span class="p">,</span> <span class="s">'author'</span><span class="p">].</span><span class="n">num_edges</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">to</span><span class="p">(</span><span class="s">'cuda'</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Heterogeneous Mini-Batch Loading:</strong> Heterogeneous graphs can be converted to mini-batches for many small and single giant graphs via the <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/loader.html#torch_geometric.loader.DataLoader"><code class="language-plaintext highlighter-rouge">loader.DataLoader</code></a> and <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/loader.html#torch_geometric.loader.NeighborLoader"><code class="language-plaintext highlighter-rouge">loader.NeighborLoader</code></a> loaders, respectively.
+These loaders can now handle both homogeneous and heterogeneous graphs:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">torch_geometric.loader</span> <span class="kn">import</span> <span class="n">DataLoader</span>
+
+<span class="n">loader</span> <span class="o">=</span> <span class="n">DataLoader</span><span class="p">(</span><span class="n">heterogeneous_graph_dataset</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">torch_geometric.loader</span> <span class="kn">import</span> <span class="n">NeighborLoader</span>
+
+<span class="n">loader</span> <span class="o">=</span> <span class="n">NeighborLoader</span><span class="p">(</span><span class="n">heterogeneous_graph</span><span class="p">,</span> <span class="n">num_neighbors</span><span class="o">=</span><span class="p">[</span><span class="mi">30</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span>
+                        <span class="n">input_nodes</span><span class="o">=</span><span class="p">(</span><span class="s">'paper'</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s">'paper'</span><span class="p">].</span><span class="n">train_mask</span><span class="p">),</span> <span class="n">shuffle</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Heterogeneous Graph Neural Networks:</strong> Heterogeneous GNNs can now easily be created from homogeneous ones via <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.to_hetero_transformer.to_hetero"><code class="language-plaintext highlighter-rouge">nn.to_hetero</code></a> and <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.to_hetero_with_bases_transformer.to_hetero_with_bases"><code class="language-plaintext highlighter-rouge">nn.to_hetero_with_bases</code></a>.
+These processes take an existing GNN model and duplicate their message functions to account for different node and edge types:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">torch_geometric.nn</span> <span class="kn">import</span> <span class="n">SAGEConv</span><span class="p">,</span> <span class="n">to_hetero</span>
+
+<span class="k">class</span> <span class="nc">GNN</span><span class="p">(</span><span class="n">torch</span><span class="p">.</span><span class="n">nn</span><span class="p">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">hidden_channels</span><span class="p">,</span> <span class="n">out_channels</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">().</span><span class="n">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">conv1</span> <span class="o">=</span> <span class="n">SAGEConv</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">hidden_channels</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">conv2</span> <span class="o">=</span> <span class="n">SAGEConv</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">out_channels</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">edge_index</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">conv1</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">edge_index</span><span class="p">).</span><span class="n">relu</span><span class="p">()</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">conv2</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">edge_index</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">x</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">GNN</span><span class="p">(</span><span class="n">hidden_channels</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">out_channels</span><span class="o">=</span><span class="n">dataset</span><span class="p">.</span><span class="n">num_classes</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">to_hetero</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data</span><span class="p">.</span><span class="n">metadata</span><span class="p">(),</span> <span class="n">aggr</span><span class="o">=</span><span class="s">'sum'</span><span class="p">)</span>
+</code></pre></div>    </div>
+
+    <p align="center">
+  <img height="400px" src="https://raw.githubusercontent.com/rusty1s/pytorch_geometric/master/docs/source/_figures/to_hetero.svg?sanitize=true" />
+</p>
+  </li>
+</ul>
+
+<h3 id="additional-features">Additional Features</h3>
+
+<ul>
+  <li>A <a href="https://pytorch-geometric.readthedocs.io/en/latest/notes/heterogeneous.html">heterogeneous graph tutorial</a> describing all newly released features (thanks to @<a href="https://github.com/mrjel">mrjel</a>)</li>
+  <li>A variety of <a href="https://github.com/rusty1s/pytorch_geometric/tree/master/examples/hetero">heterogeneous GNN examples</a></li>
+  <li>Support for lazy initialization of GNN operators by passing <code class="language-plaintext highlighter-rouge">-1</code> to the <code class="language-plaintext highlighter-rouge">in_channels</code> argument (implemented via <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.dense.Linear"><code class="language-plaintext highlighter-rouge">nn.dense.Linear</code></a>).
+This allows to avoid calculating and keeping track of input tensor sizes, simplyfing the creation of heterogeneous graph models with varying feature dimensionalities across different node and edge types.
+Lazy initialization is supported for all existing PyG operators (thanks to @<a href="https://github.com/yaoyaowd">yaoyaowd</a>):
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">torch_geometric.nn</span> <span class="kn">import</span> <span class="n">GATConv</span>
+  
+<span class="n">conv</span> <span class="o">=</span> <span class="n">GATConv</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>
+  
+<span class="c1"># We can initialize the model’s parameters by calling it once:
+</span><span class="n">conv</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">edge_index</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.conv.HeteroConv"><code class="language-plaintext highlighter-rouge">nn.conv.HeteroConv</code></a>: A generic wrapper for computing graph convolution on heterogeneous graphs (thanks to @<a href="https://github.com/RexYing">RexYing</a>)</li>
+  <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.conv.HGTConv"><code class="language-plaintext highlighter-rouge">nn.conv.HGTConv</code></a>: The heterogeneous graph transformer operator from the <a href="https://arxiv.org/abs/2003.01332">“Heterogeneous Graph Transformer”</a> paper</li>
+  <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/loader.html#torch_geometric.loader.HGTLoader"><code class="language-plaintext highlighter-rouge">loader.HGTLoader</code></a>: The heterogeneous graph sampler from the <a href="https://arxiv.org/abs/2003.01332">“Heterogeneous Graph Transformer”</a> paper for learning on large-scale heterogeneous graphs (thanks to @<a href="https://github.com/chantat">chantat</a>)</li>
+  <li>Support for heterogeneous graph transformations in <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/transforms.html#torch_geometric.transforms.AddSelfLoops"><code class="language-plaintext highlighter-rouge">transforms.AddSelfLoops</code></a>, <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/transforms.html#torch_geometric.transforms.ToSparseTensor"><code class="language-plaintext highlighter-rouge">transforms.ToSparseTensor</code></a>, <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/transforms.html#torch_geometric.transforms.NormalizeFeatures"><code class="language-plaintext highlighter-rouge">transforms.NormalizeFeatures</code></a> and <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/transforms.html#torch_geometric.transforms.ToUndirected"><code class="language-plaintext highlighter-rouge">transforms.ToUndirected</code></a></li>
+  <li>New heterogeneous graph datasets: <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/datasets.html#torch_geometric.datasets.OGB_MAG"><code class="language-plaintext highlighter-rouge">datasets.OGB_MAG</code></a>, <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/datasets.html#torch_geometric.datasets.IMDB"><code class="language-plaintext highlighter-rouge">datasets.IMDB</code></a>, <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/datasets.html#torch_geometric.datasets.DBLP"><code class="language-plaintext highlighter-rouge">datasets.DBLP</code></a> and <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/datasets.html#torch_geometric.datasets.LastFM"><code class="language-plaintext highlighter-rouge">datasets.LastFM</code></a></li>
+  <li>Support for converting heterogeneous graphs to “typed” homogeneous ones via <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/data.html#torch_geometric.data.HeteroData.to_homogeneous"><code class="language-plaintext highlighter-rouge">data.HeteroData.to_homogeneous</code></a> (thanks to @<a href="https://github.com/yzhao062">yzhao062</a>)</li>
+  <li>A <a href="https://pytorch-geometric.readthedocs.io/en/latest/notes/load_csv.html">tutorial</a> on creating a <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/data.html#torch_geometric.data.HeteroData"><code class="language-plaintext highlighter-rouge">data.HeteroData</code></a> object from raw <code class="language-plaintext highlighter-rouge">*.csv</code> files (thanks to @<a href="https://github.com/yaoyaowd">yaoyaowd</a> and @<a href="https://github.com/mrjel">mrjel</a>)</li>
+  <li>An <a href="https://github.com/rusty1s/pytorch_geometric/blob/master/examples/pytorch_lightning/relational_gnn.py">example</a> to scale heterogeneous graph models via <a href="https://www.pytorchlightning.ai/">PyTorch Lightning</a></li>
+</ul>
+
+<h2 id="managing-experiments-with-graphgym">Managing Experiments with GraphGym</h2>
+
+<p><strong>GraphGym</strong> is now officially supported in PyG 2.0 via <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/graphgym.html"><code class="language-plaintext highlighter-rouge">torch_geometric.graphgym</code></a>.
+See <a href="https://pytorch-geometric.readthedocs.io/en/latest/notes/graphgym.html">here</a> for the accompanying tutorial.
+Overall, GraphGym is a platform for designing and evaluating Graph Neural Networks from configuration files via a highly modularized pipeline (thanks to @<a href="https://github.com/JiaxuanYou">JiaxuanYou</a>):</p>
+
+<ol>
+  <li>GraphGym is the perfect place to start learning about <em>standardized GNN implementation and evaluation</em></li>
+  <li>GraphGym provides a <em>simple interface to try out thousands of GNN architectures in parallel</em> to find the best design for your specific task</li>
+  <li>GraphGym lets you easily do <em>hyper-parameter search</em> and <em>visualize what design choices are better</em></li>
+</ol>
+
+<p align="center">
+<img width="100%" src="https://raw.githubusercontent.com/rusty1s/pytorch_geometric/master/docs/source/_figures/graphgym_results.png" />
+</p>
+
+<h2 id="breaking-changes">Breaking Changes</h2>
+
+<ul>
+  <li>The <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/datasets.html#torch_geometric.datasets.AMiner"><code class="language-plaintext highlighter-rouge">datasets.AMiner</code></a> dataset now returns a <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/data.html#torch_geometric.data.HeteroData"><code class="language-plaintext highlighter-rouge">data.HeteroData</code></a> object. See <a href="https://github.com/rusty1s/pytorch_geometric/blob/master/examples/hetero/metapath2vec.py">here</a> for our updated <code class="language-plaintext highlighter-rouge">MetaPath2Vec</code> example on <code class="language-plaintext highlighter-rouge">AMiner</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">transforms.AddTrainValTestMask</code> has been replaced in favour of <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/transforms.html#torch_geometric.transforms.RandomNodeSplit"><code class="language-plaintext highlighter-rouge">transforms.RandomNodeSplit</code></a></li>
+  <li>Since the storage layout of <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/data.html#torch_geometric.data.Data"><code class="language-plaintext highlighter-rouge">data.Data</code></a> significantly changed in order to support heterogenous graphs, already processed datasets need to be re-processed by deleting the <code class="language-plaintext highlighter-rouge">root/processed</code> folder.</li>
+  <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/data.html#torch_geometric.data.Data.__cat_dim__"><code class="language-plaintext highlighter-rouge">data.Data.__cat_dim__</code></a> and <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/data.html#torch_geometric.data.Data.__inc__"><code class="language-plaintext highlighter-rouge">data.Data.__inc__</code></a> now expect additional input arguments:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">__cat_dim__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">pass</span>
+    
+<span class="k">def</span> <span class="nf">__inc__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">pass</span>
+</code></pre></div>    </div>
+    <p>In case you modified <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/data.html#torch_geometric.data.Data.__cat_dim__"><code class="language-plaintext highlighter-rouge">__cat_dim__</code></a> or <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/data.html#torch_geometric.data.Data.__inc__"><code class="language-plaintext highlighter-rouge">__inc__</code></a> functionality in a customized <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/data.html#torch_geometric.data.Data"><code class="language-plaintext highlighter-rouge">data.Data</code></a> object, please ensure to apply the above changes.</p>
+  </li>
+</ul>
+
+<h2 id="deprecations">Deprecations</h2>
+
+<ul>
+  <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.conv.PointConv"><code class="language-plaintext highlighter-rouge">nn.conv.PointConv</code></a> is deprecated in favour of <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.conv.PointNetConv"><code class="language-plaintext highlighter-rouge">nn.conv.PointNetConv</code></a> (thanks to @lelouedec and @QuanticDisaster)</li>
+  <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/utils.html#torch_geometric.utils.train_test_split_edges"><code class="language-plaintext highlighter-rouge">utils.train_test_split_edges</code></a> is deprecated in favour of the new <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/transforms.html#torch_geometric.transforms.RandomLinkSplit"><code class="language-plaintext highlighter-rouge">transforms.RandomLinkSplit</code></a> transform</li>
+  <li>All data loaders were moved from <code class="language-plaintext highlighter-rouge">torch_geometric.data</code> to <code class="language-plaintext highlighter-rouge">torch_geometric.loader</code>, <em>e.g.</em>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">torch_geometric.loader</span> <span class="kn">import</span> <span class="n">DataLoader</span>
+</code></pre></div>    </div>
+  </li>
+  <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/loader.html#torch_geometric.loader.NeighborSampler"><code class="language-plaintext highlighter-rouge">loader.NeighborSampler</code></a> is deprecated in favour of <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/loader.html#torch_geometric.loader.NeighborLoader"><code class="language-plaintext highlighter-rouge">loader.NeighborLoader</code></a> in order to simplify the application of neighbor sampling and to support both neighbor sampling in homogeneous and heterogeneous graphs</li>
+  <li><code class="language-plaintext highlighter-rouge">Data.contains_isolated_nodes</code> and <code class="language-plaintext highlighter-rouge">Data.contains_self_loops</code> are deprecated in favour of <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/data.html#torch_geometric.data.Data.has_isolated_nodes"><code class="language-plaintext highlighter-rouge">Data.has_isolated_nodes</code></a> and <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/data.html#torch_geometric.data.Data.has_self_loops"><code class="language-plaintext highlighter-rouge">Data.has_self_loops</code></a>, respectively</li>
+</ul>
+
+<h2 id="additional-features-1">Additional Features</h2>
+
+<ul>
+  <li><a href="https://github.com/rusty1s/pytorch_scatter"><code class="language-plaintext highlighter-rouge">torch-scatter</code></a> and <a href="https://github.com/rusty1s/pytorch_sparse"><code class="language-plaintext highlighter-rouge">torch-sparse</code></a> now support half-precision computation via <code class="language-plaintext highlighter-rouge">torch.half</code>, bringing half-precision support to PyG</li>
+  <li>Added a <a href="https://pytorch-geometric.readthedocs.io/en/latest/notes/cheatsheet.html">GNN cheatsheet</a> to the documentation, which lets you more easily choose a GNN operator for your specific need</li>
+  <li>Added the <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/transforms.html#torch_geometric.transforms.RandomLinkSplit"><code class="language-plaintext highlighter-rouge">transforms.RandomLinkSplit</code></a> transform to easily perform a random edge-level random split (thanks to @RexXing)</li>
+  <li>Added the <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/profile.html"><code class="language-plaintext highlighter-rouge">torch_geometric.profile</code></a> package which provides a variety of utility functions for benchmarking runtimes and memory consumptions of GNN models (thanks to @<a href="https://github.com/yzhao062">yzhao062</a>)</li>
+  <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.conv.message_passing.MessagePassing"><code class="language-plaintext highlighter-rouge">nn.conv.MessagePassing</code></a> now supports hooks for <code class="language-plaintext highlighter-rouge">propagate</code>, <code class="language-plaintext highlighter-rouge">message</code>, <code class="language-plaintext highlighter-rouge">aggregate</code> and <code class="language-plaintext highlighter-rouge">update</code> functions, <em>e.g.</em> via <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.conv.message_passing.MessagePassing.register_propagate_forward_pre_hook"><code class="language-plaintext highlighter-rouge">nn.conv.MessagePassing.register_propagate_forward_hook</code></a></li>
+  <li>Added the <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.conv.GeneralConv"><code class="language-plaintext highlighter-rouge">nn.conv.GeneralConv</code></a> operator that can handle most GNN use-cases (<em>e.g.</em>, w/ or w/o edge features, …) and has enough design options to be tuned (<em>e.g.</em>, attention, skip-connections, …) (thanks to @<a href="https://github.com/JiaxuanYou">JiaxuanYou</a>)</li>
+  <li>Added the <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.models.RECT_L"><code class="language-plaintext highlighter-rouge">nn.models.RECT_L</code></a> model for learning with completely-imbalanced labels (thanks to @Fizyhsp)</li>
+  <li>Added the Pathfinder Discovery Network Convolutional operator <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.conv.PDNConv"><code class="language-plaintext highlighter-rouge">nn.conv.PDNConv</code></a> (thanks to @benedekrozemberczki)</li>
+  <li>Added basic GNN model support as part of the <code class="language-plaintext highlighter-rouge">nn.models</code> package, <em>e.g.</em>, <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.models.GCN"><code class="language-plaintext highlighter-rouge">nn.model.GCN</code></a>, <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.models.GraphSAGE"><code class="language-plaintext highlighter-rouge">nn.models.GraphSAGE</code></a>, <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.models.GAT"><code class="language-plaintext highlighter-rouge">nn.models.GAT</code></a> and <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.models.GIN"><code class="language-plaintext highlighter-rouge">nn.models.GIN</code></a>. Pre-defined models support customizing hidden feature dimensionality, number of layers, activation, normalization and jumping knowledge (thanks to @PabloAMC)</li>
+  <li>Added the <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/datasets.html#torch_geometric.datasets.MD17"><code class="language-plaintext highlighter-rouge">datasets.MD17</code></a> datasets (thanks to @M-R-Schaefer)</li>
+  <li>Added a link-prediction <a href="https://github.com/rusty1s/pytorch_geometric/blob/master/examples/rgcn_link_pred.py">example</a> of <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.conv.RGCNConv"><code class="language-plaintext highlighter-rouge">nn.conv.RGCNConv</code></a>  (thanks to @moritzblum)</li>
+  <li>Added an <a href="https://github.com/rusty1s/pytorch_geometric/blob/master/examples/mem_pool.py">example</a> of <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.pool.MemPooling"><code class="language-plaintext highlighter-rouge">nn.pool.MemPooling</code></a> (thanks to @wsad1)</li>
+  <li>Added a <code class="language-plaintext highlighter-rouge">return_attention_weights</code> argument for <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.conv.TransformerConv"><code class="language-plaintext highlighter-rouge">nn.conv.TransformerConv</code></a> (thanks to @wsad1)</li>
+  <li>Batch support for <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/utils.html#torch_geometric.utils.homophily"><code class="language-plaintext highlighter-rouge">utils.homophily</code></a> (thanks to @wsad1)</li>
+  <li>Added a <code class="language-plaintext highlighter-rouge">batch_size</code> argument to <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/utils.html#torch_geometric.utils.to_dense_batch"><code class="language-plaintext highlighter-rouge">utils.to_dense_batch</code></a> (thanks to @jimmiebtlr)</li>
+</ul>
+
+<h2 id="minor-changes">Minor Changes</h2>
+
+<ul>
+  <li>Heavily improved loading times of <code class="language-plaintext highlighter-rouge">import torch_geometric</code></li>
+  <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.sequential.Sequential"><code class="language-plaintext highlighter-rouge">nn.Sequential</code></a> is now fully jittable</li>
+  <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.conv.LEConv"><code class="language-plaintext highlighter-rouge">nn.conv.LEConv</code></a> is now fully jittable (thanks to @lucagrementieri)</li>
+  <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.conv.GENConv"><code class="language-plaintext highlighter-rouge">nn.conv.GENConv</code></a> can now make use of <code class="language-plaintext highlighter-rouge">"add"</code>, <code class="language-plaintext highlighter-rouge">"mean"</code> or <code class="language-plaintext highlighter-rouge">"max"</code> aggregations (thanks to @riskiem)</li>
+  <li>Attributes of type <code class="language-plaintext highlighter-rouge">torch.nn.utils.rnn.PackedSequence</code> are now correctly handled by <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/data.html#torch_geometric.data.HeteroData"><code class="language-plaintext highlighter-rouge">data.Data</code></a> and <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/data.html#torch_geometric.data.Data"><code class="language-plaintext highlighter-rouge">data.HeteroData</code></a> (thanks to @WuliangHuang)</li>
+  <li>Added support for <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/data.html#torch_geometric.data.Data.record_stream"><code class="language-plaintext highlighter-rouge">data.record_stream()</code></a> in order to allow for data prefetching (thanks to @FarzanT)</li>
+  <li>Added a <code class="language-plaintext highlighter-rouge">max_num_neighbors</code> attribute to <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.models.SchNet"><code class="language-plaintext highlighter-rouge">nn.models.SchNet</code></a> and <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.models.DimeNet"><code class="language-plaintext highlighter-rouge">nn.models.DimeNet</code></a> (thanks to @nec4)</li>
+  <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.conv.message_passing.MessagePassing"><code class="language-plaintext highlighter-rouge">nn.conv.MessagePassing</code></a> is now jittable in case <code class="language-plaintext highlighter-rouge">message</code>, <code class="language-plaintext highlighter-rouge">aggregate</code> and <code class="language-plaintext highlighter-rouge">update</code> return multiple arguments (thanks to @PhilippThoelke)</li>
+  <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/utils.html#torch_geometric.utils.from_networkx"><code class="language-plaintext highlighter-rouge">utils.from_networkx</code></a> now supports grouping of node-level and edge-level features (thanks to @PabloAMC)</li>
+  <li>Transforms now inherit from <code class="language-plaintext highlighter-rouge">transforms.BaseTransform</code> to ease type checking (thanks to @CCInc)</li>
+  <li>Added support for the deletion of data attributes via <code class="language-plaintext highlighter-rouge">del data[key]</code> (thanks to @Linux-cpp-lisp)</li>
+</ul>
+
+<h2 id="bugfixes">Bugfixes</h2>
+
+<ul>
+  <li>The <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/transforms.html#torch_geometric.transforms.LinearTransformation"><code class="language-plaintext highlighter-rouge">transforms.LinearTransformation</code></a> transform now correctly transposes the input matrix before applying the transformation (thanks to @beneisner)</li>
+  <li>Fixed a bug in <a href="https://github.com/rusty1s/pytorch_geometric/tree/master/benchmark/kernel"><code class="language-plaintext highlighter-rouge">benchmark/kernel</code></a> that prevented the application of <code class="language-plaintext highlighter-rouge">DiffPool</code> on the <code class="language-plaintext highlighter-rouge">IMDB-BINARY</code> dataset (thanks to @dongZheX)</li>
+  <li>Feature dimensionalities of <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/datasets.html#torch_geometric.datasets.WikipediaNetwork"><code class="language-plaintext highlighter-rouge">datasets.WikipediaNetwork</code></a> do now match which the official reported ones in case <code class="language-plaintext highlighter-rouge">geom_gcn_preprocess=True</code> (thanks to @ZhuYun97 and @GitEventhandler)</li>
+  <li>Fixed a bug in the <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/datasets.html#torch_geometric.datasets.DynamicFAUST"><code class="language-plaintext highlighter-rouge">datasets.DynamicFAUST</code></a> dataset in which <code class="language-plaintext highlighter-rouge">data.num_nodes</code> was undefined (thanks to @koustav123)</li>
+  <li>Fixed a bug in which <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.models.GNNExplainer"><code class="language-plaintext highlighter-rouge">nn.models.GNNExplainer</code></a> could not handle GNN operators that add self-loops to the graph in case self-loops were already present (thanks to @tw200464tw and @NithyaBhasker)</li>
+  <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.norm.LayerNorm"><code class="language-plaintext highlighter-rouge">nn.norm.LayerNorm</code></a> may no longer produce NaN gradients (thanks to @fbragman)</li>
+  <li>Fixed a bug in which it was not possible to customize <code class="language-plaintext highlighter-rouge">networkx</code> drawing arguments in <a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.models.GNNExplainer.visualize_subgraph"><code class="language-plaintext highlighter-rouge">nn.models.GNNExplainer.visualize_subgraph()</code></a> (thanks to @jvansan)</li>
+  <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/transforms.html#torch_geometric.transforms.RemoveIsolatedNodes"><code class="language-plaintext highlighter-rouge">transforms.RemoveIsolatedNodes</code></a> now correctly removes isolated nodes in case <code class="language-plaintext highlighter-rouge">data.num_nodes</code> is explicitely set (thanks to @blakechi)</li>
+</ul>
+
+              
+              <div class="clearfix"></div>
+              <div class="space40"></div>
+              <div class="space10"></div>
+              <div class="d-lg-flex justify-content-between align-items-center meta-footer">
+                 <ul class="list-unstyled tag-list">
+                    
+                    
+                      
+                    
+                </ul>
+                <div class="space20 d-lg-none"></div>
+                <div class="d-flex align-items-center">
+                 <p class="pr-20 mb-0"><strong>Share on:</strong></p>
+<ul class="social social-mute">
+    <li>
+    <a  href="https://www.facebook.com/sharer/sharer.php?u=http://pyg.org/PyG2.0-released"
+        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+        title="Share on Facebook" >
+        <i class="jam jam-facebook"></i>
+    </a>
+    </li>
+    <li>
+      <a  href="https://twitter.com/intent/tweet?text=PyG 2.0 Released&url=http://pyg.org/PyG2.0-released"
+        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+        title="Share on Twitter" >
+        <i class="jam jam-twitter"></i>
+     </a>
+    </li>
+    <li>
+    <a  href="http://pinterest.com/pin/create/button/?url=&media=http://pyg.org/assets/images/posts/logo_pyg@2x.png&description=" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" >
+        <i class="jam jam-pinterest"></i>
+    </a>
+    </li>
+</ul>
+                </div>
+              </div>
+            </div>
+            <!-- /.post-content -->
+          </div>
+          <!-- /.post -->
+        </div>
+        <!-- /.blog -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <h3 class="mb-30">You Might Also Like</h3>
+        <div class="grid-view">
+          <div class="carousel owl-carousel" data-margin="30" data-dots="true" data-autoplay="false" data-autoplay-timeout="5000" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "3"}}'>
+           
+            <div class="item">
+             
+              <figure class="overlay overlay1 rounded mb-30">
+                <a href="/GraphGym-PyG-integration">
+                  <img class="post-thumb" src="/assets/images/posts/graphgym_pipeline.png" alt="GraphGym & PyG Integration"/>
+                </a>
+                <figcaption>
+                  <h5 class="from-top mb-0">Read More</h5>
+                </figcaption>
+              </figure>
+              
+              
+              <div class="category">
+                <a href="" class="badge badge-pill bg-purple"></a>
+              </div>
+              
+              <h2 class="post-title"><a href="/GraphGym-PyG-integration">GraphGym & PyG Integration</a></h2>
+              <div class="meta mb-0">
+              
+               <span class="date"><i class="jam jam-clock"></i>14 September 2021</span>
+              
+              </div>
+            </div>
+            <!-- /.item -->
+           
+            <div class="item">
+             
+              <figure class="overlay overlay1 rounded mb-30">
+                <a href="/stanford-graph-learning-workshop">
+                  <img class="post-thumb" src="/assets/images/posts/stanford_workshop.png" alt="Stanford Graph Learning Workshop 2021"/>
+                </a>
+                <figcaption>
+                  <h5 class="from-top mb-0">Read More</h5>
+                </figcaption>
+              </figure>
+              
+              
+              <div class="category">
+                <a href="" class="badge badge-pill bg-purple"></a>
+              </div>
+              
+              <h2 class="post-title"><a href="/stanford-graph-learning-workshop">Stanford Graph Learning Workshop 2021</a></h2>
+              <div class="meta mb-0">
+              
+               <span class="date"><i class="jam jam-clock"></i>12 September 2021</span>
+              
+              </div>
+            </div>
+            <!-- /.item -->
+           
+            <div class="item">
+             
+              <figure class="overlay overlay1 rounded mb-30">
+                <a href="/PyG2.0-released">
+                  <img class="post-thumb" src="/assets/images/posts/logo_pyg@2x.png" alt="PyG 2.0 Released"/>
+                </a>
+                <figcaption>
+                  <h5 class="from-top mb-0">Read More</h5>
+                </figcaption>
+              </figure>
+              
+              
+              <div class="category">
+                <a href="" class="badge badge-pill bg-purple"></a>
+              </div>
+              
+              <h2 class="post-title"><a href="/PyG2.0-released">PyG 2.0 Released</a></h2>
+              <div class="meta mb-0">
+              
+               <span class="date"><i class="jam jam-clock"></i>12 September 2021</span>
+              
+              </div>
+            </div>
+            <!-- /.item -->
+           
+          </div>
+          <!-- /.owl-carousel -->
+        </div>
+        <!-- /.grid-view -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+<div class="wrapper gray-wrapper">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div id="disqus_thread"></div>
+<script>
+
+var disqus_config = function () {
+this.page.url = 'http://pyg.org/PyG2.0-released';  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = '/PyG2.0-released'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://pyg-org.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script id="dsq-count-scr" src="//pyg-org.disqus.com/count.js" async></script>
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+<footer class=" dark-wrapper inverse-text ">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-md-4 col-lg-3">
+        <div class="widget">
+         <a href="">
+          
+            <img src="/assets/images/logo_pyg.png" srcset="/assets/images/logo_pyg.png 1x, /assets/images/logo_pyg@2x.png 2x" alt="PyG"/>
+            
+         </a>
+          <div class="space40"></div>
+          <p>© 2021 PyG.  All rights reserved.</p>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="col-md-4 col-lg-3">
+        <div class="widget">
+          <h3 class="widget-title">Get in Touch</h3>
+          
+           <a href="mailto:team@pyg.org">team@pyg.org</a><br />
+          
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="col-md-4 col-lg-3">
+        
+        <div class="widget">
+          
+           <h5 class="widget-title">Links</h5>
+          
+          <ul class="list-unstyled mb-0">
+            
+            <li><a href="">News</a></li>
+            
+            <li><a href="">Docs</a></li>
+            
+            <li><a href="">Discussions</a></li>
+            
+            <li><a href="">GitHub</a></li>
+            
+            <li><a href="">Join Slack</a></li>
+            
+          </ul>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="space30 d-none d-md-block d-lg-none"></div>
+      <div class="col-md-12 col-lg-3">
+        <div class="widget">
+          
+           <h3 class="widget-title">Our Newsletter</h3>
+          
+          
+           <p>Subscribe to our newsletter to get our news & deals delivered to your inbox!</p>
+          
+          <div class="space10"></div>
+          <div class="newsletter-wrapper">
+            <form action="https://formsubmit.io/send/team@pyg.org" target="_blank">
+              <div id="mc_embed_signup_scroll" class="input-group">
+                <input type="email"  name="user_email" class="email form-control mb-0 mr-2 mb-sm-0"  placeholder="Email Address" required>
+                <button type="submit" class="btn btn-rounded btn-default mr-0 mb-0 pull-right">
+                Join
+               </button>
+              </div>
+            </form>
+          </div>
+          <!-- /.newsletter-wrapper -->
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!--/.row -->
+  </div>
+  <!-- /.container -->
+</footer>
+</div>
+
+  </div>
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+  <script src="/assets/js/plugins.js"></script>
+  <script src="/assets/js/simple-jekyll-search.min.js"></script>
+  <script src="/assets/js/scripts.js"></script>
+</body>
+</html>
